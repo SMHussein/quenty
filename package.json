@@ -1,14 +1,15 @@
 {
-  "name": "khrystinka",
+  "name": "quenty",
   "version": "1.0.0",
-  "description": "khrystinka photograpy",
-  "main": "index.js",
+  "description": "quenty wedding",
+  "main": "index.php",
   "browserslist": [
     ">0.2%",
     "not dead",
     "last 10 versions"
   ],
   "scripts": {
+    "start": "index.php",
     "watch:sass": "node-sass sass/main.scss css/style.css -w",
     "devserver": "live-server",
     "start-development": "npm-run-all --parallel devserver watch:sass",
