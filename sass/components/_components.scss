@@ -1,0 +1,224 @@
+#diamond-line {
+  display: block;
+  width: 20rem;
+  height: 4rem;
+  margin: 0 auto;
+}
+
+#diamond-vertical {
+  width: 3rem;
+  height: 3rem;
+
+  @media only screen and (max-width: $bp-large) {
+    display: none;
+  }
+}
+
+#link-active {
+  color: $color-pink;
+
+  &:hover {
+    color: $color-header;
+  }
+}
+
+// .btn--parent {
+//   position: relative;
+//   z-index: 1;
+//   transition: all 1s;
+// }
+
+// .btn-primary {
+//   position: relative;
+//   text-decoration: none;
+//   cursor: pointer;
+//   padding: 2rem 7rem;
+//   border-radius: 10rem;
+//   display: inline-block;
+//   font-size: 1.6rem;
+//   transition: all 0.5s;
+
+//   &--white {
+//     background-color: #ffffff;
+//     color: $color-pink;
+
+//     &:hover {
+//       background-color: $color-grey;
+//       color: $color-pink;
+//     }
+
+//     &::before {
+//       border: 1px solid $color-grey;
+//     }
+//   }
+
+//   &--pink {
+//     background-color: $color-pink;
+//     color: #ffffff;
+
+//     &:hover {
+//       background-color: $color-grey;
+//       color: $color-pink;
+//     }
+
+//     &::before {
+//       border: 1px solid $color-pink;
+//     }
+//   }
+
+//   &::before {
+//     content: "";
+//     position: absolute;
+//     background-color: transparent;
+//     z-index: -1;
+//     top: 50%;
+//     left: 50%;
+//     transform: translate(-50%, -50%);
+//     border-radius: 10rem;
+
+//     width: 120%;
+//     height: 140%;
+//     max-width: 0;
+//     max-height: 0;
+
+//     transition: all 0.5s;
+//   }
+
+//   &:hover::before {
+//     // animation: animate 2s linear forwards;
+//     max-width: 120%;
+//     max-height: 140%;
+//   }
+// }
+
+.btn--parent {
+  position: relative;
+  z-index: 0;
+}
+
+.btn-primary {
+  position: relative;
+  text-decoration: none;
+  border-radius: 10rem;
+  display: inline-block;
+  font-size: 1.6rem;
+  position: relative;
+  padding: 2rem 7rem;
+  cursor: pointer;
+  text-decoration: none;
+
+  &--pink-white {
+    background-color: $color-pink;
+    color: #ffffff;
+
+    &:hover::before {
+      border-top-color: #ffffff;
+      border-right-color: #ffffff;
+      border-bottom-color: #ffffff;
+      border-left-color: #ffffff;
+    }
+  }
+
+  &--white {
+    background-color: #ffffff;
+    color: $color-pink;
+
+    // &:hover {
+    //   background-color: $color-grey;
+    //   color: $color-pink;
+    // }
+
+    // &::before {
+    //   border: 1px solid $color-grey;
+    // }
+    &:hover::before {
+      border-top-color: #ffffff;
+      border-right-color: #ffffff;
+      border-bottom-color: #ffffff;
+      border-left-color: #ffffff;
+    }
+  }
+
+  &--pink {
+    background-color: $color-pink;
+    color: #ffffff;
+
+    // &:hover {
+    //   background-color: $color-grey;
+    //   color: $color-pink;
+    // }
+
+    // &::before {
+    //   border: 1px solid $color-pink;
+    // }
+
+    &:hover::before {
+      border-top-color: $color-pink;
+      border-right-color: $color-pink;
+      border-bottom-color: $color-pink;
+      border-left-color: $color-pink;
+    }
+  }
+
+  &::before {
+    content: "";
+    width: 110%;
+    height: 140%;
+    position: absolute;
+    z-index: -1;
+    background-color: transparent;
+    border-radius: 10rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid transparent;
+  }
+
+  &:hover::before {
+    transition: border-top-color 0.15s linear,
+      border-right-color 0.15s linear 0.1s,
+      border-bottom-color 0.15s linear 0.1s;
+  }
+}
+
+// .btn-primary {
+//   &,
+//   &:link,
+//   &:visited {
+//     text-decoration: none;
+//     background-color: $color-pink;
+//     cursor: pointer;
+//     padding: 1.2rem 3rem;
+//     border-radius: 10rem;
+//     display: inline-block;
+//     font-size: 1.6rem;
+//     color: #ffffff;
+//   }
+// }
+
+// .btn-home {
+//   &,
+//   &:visited,
+//   &:link {
+//   }
+// }
+
+.corner-rose {
+  &__img {
+    position: absolute;
+    width: 20rem;
+    height: 10rem;
+    top: 0;
+
+    @media only screen and (max-width: $bp-meduim) {
+      display: none;
+    }
+    &--left {
+      left: 0;
+    }
+
+    &--right {
+      right: 0;
+    }
+  }
+}
