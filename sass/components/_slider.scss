@@ -14,24 +14,37 @@
 .next {
   position: absolute;
   top: 50%;
-  transform: translate(0, -50%);
-  font-size: 50px;
-  padding: 15px;
+  transform: translateY(-50%);
+  font-size: 3rem;
+  padding: 3rem;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
   cursor: pointer;
   color: #fff;
   transition: 0.1s;
   user-select: none;
+  height: 4rem;
+  width: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   @media only screen and (max-width: $bp-400) {
     display: none;
   }
 }
+
+.prev {
+  left: 1%;
+}
+
+.next {
+  right: 1%;
+}
+
 .prev:hover,
 .next:hover {
-  color: #00a7ff; /* blue */
-}
-.next {
-  right: 0;
+  color: $color-pink;
 }
 
 /* /2 */
