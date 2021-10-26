@@ -172,7 +172,7 @@
     </header>
 
     <main>
-      <section class="section section__aboutus">
+      <section class="section--not section__aboutus">
         <img class="rose aboutus__rose" src="img/left.png" alt="Left Rose" />
         <h2 class="heading-secondery aboutus__heading">Our Story</h2>
         <img class="rose aboutus__rose" src="img/right.png" alt="Right Rose" />
@@ -180,7 +180,7 @@
 
       <!-- OUR Story Gallery ///////////////////////////////////////////////////////////////////// -->
 
-      <section class="section section__our-stay u-margin-huge">
+      <section class="section--not section__our-stay u-margin-huge">
         <div class="our-stay__heading">
           <img
             class="rose our-stay__rose"
@@ -330,6 +330,8 @@
                 src="img/show1.png"
                 alt="Best Memories Photo"
               />
+                        <span class="our-story__gallery--figure__span">&plus;</span>
+
             </figure>
             <figure class="our-story__gallery--figure">
               <img
@@ -337,6 +339,8 @@
                 src="img/show2.png"
                 alt="Best Memories Photo"
               />
+                        <span class="our-story__gallery--figure__span">&plus;</span>
+
             </figure>
             <figure class="our-story__gallery--figure">
               <img
@@ -344,6 +348,8 @@
                 src="img/show3.png"
                 alt="Best Memories Photo"
               />
+                        <span class="our-story__gallery--figure__span">&plus;</span>
+
             </figure>
             <figure class="our-story__gallery--figure">
               <img
@@ -351,6 +357,8 @@
                 src="img/show4.png"
                 alt="Best Memories Photo"
               />
+                        <span class="our-story__gallery--figure__span">&plus;</span>
+
             </figure>
             <figure class="our-story__gallery--figure">
               <img
@@ -358,6 +366,8 @@
                 src="img/show5.png"
                 alt="Best Memories Photo"
               />
+                        <span class="our-story__gallery--figure__span">&plus;</span>
+
             </figure>
             <figure class="our-story__gallery--figure">
               <img
@@ -365,6 +375,8 @@
                 src="img/show6.png"
                 alt="Best Memories Photo"
               />
+                        <span class="our-story__gallery--figure__span">&plus;</span>
+
             </figure>
             <figure class="our-story__gallery--figure">
               <img
@@ -372,6 +384,8 @@
                 src="img/show7.png"
                 alt="Best Memories Photo"
               />
+                        <span class="our-story__gallery--figure__span">&plus;</span>
+
             </figure>
             <figure class="our-story__gallery--figure">
               <img
@@ -379,10 +393,26 @@
                 src="img/show8.png"
                 alt="Best Memories Photo"
               />
+              <span class="our-story__gallery--figure__span">&plus;</span>
+
             </figure>
           </div>
         </div>
       </section>
+
+      <div class="shadow-big">
+        <div class="preview-box-big" id="preview-box">
+          <div class="details-big">
+            <span class="title-big">Image <p class="current-img-big"></p> of <p class="total-img-big"></p></span>
+            <span class="close-icon-big">&#x2715</span>
+          </div>
+          <div class="image-box-big">
+            <div class="slide-big popup-prev-big">&#x3C;</div>
+            <div class="slide-big popup-next-big">&#65310;</div>
+            <img src="img/show1.png" alt="" class="preview-img-big">
+          </div>
+      </div>
+    </div>
     </main>
 
     <!-- Foter ////////////////////////////////////////////////////////////////////////////// -->
@@ -518,5 +548,6 @@
       </p>
     </div>
     <script src="js/app.js"></script>
+    <script src="js/slider-big.js"></script>
   </body>
 </html>

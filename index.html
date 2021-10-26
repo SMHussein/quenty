@@ -169,65 +169,63 @@
     </header>
 
     <main>
-      <section class="section section__slider">
-        <div class="slider">
-          <div class="slider__heading">
-            <h3 class="heading-tertiary slider__title">Getting Married</h3>
-            <h2 class="heading-secondery slider__heading-primary">
-              Carol & John
-            </h2>
 
-            <p class="paragraph slider__paragraph">
-              Mauris solicitudin enim condimuntum. luctus justo non for molestie
-              nis. Aenean et egestas nulla. Pallentesque habitant morbiend
-            </p>
-            <div class="div slider__icon-container">
-              <svg class="slider__icon">
-                <use xlink:href="img/sprite.svg#icon-home-diamond"></use>
-              </svg>
-            </div>
-            <div class="btn--parent">
-              <a
-                href="our-services.html"
-                class="btn-primary btn-primary--pink-white"
-                >Our Services</a
-              >
-            </div>
+      <section class="section--not section__slider">
+      <div class="carousel">
+        <div class="slider__heading">
+          <h3 class="heading-tertiary slider__title">Getting Married</h3>
+          <h2 class="heading-secondery slider__heading-primary">
+            Carol & John
+          </h2>
+
+          <p class="paragraph slider__paragraph">
+            Mauris solicitudin enim condimuntum. luctus justo non for molestie
+            nis. Aenean et egestas nulla. Pallentesque habitant morbiend
+          </p>
+          <div class="div slider__icon-container">
+            <svg class="slider__icon">
+              <use xlink:href="img/sprite.svg#icon-home-diamond"></use>
+            </svg>
           </div>
-
-          <!-- fade css -->
-          <div class="myslide fade">
-            <img
-              class="slider__img"
-              src="img/slide1.png"
-              style="width: 100%; height: 100%"
-            />
+          <div class="btn--parent ">
+            <a
+              href="our-services.html"
+              class="btn-primary btn-primary--pink-white btn-animated"
+              >Our Services</a
+            >
           </div>
-
-          <div class="myslide fade">
-            <img
-              class="slider__img"
-              src="img/slide2.png"
-              style="width: 100%; height: 100%"
-            />
-          </div>
-
-          <div class="myslide fade">
-            <img
-              class="slider__img"
-              src="img/slide3.png"
-              style="width: 100%; height: 100%"
-            />
-          </div>
-
-          <!-- onclick js -->
-          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-          <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-          <!-- /onclick js -->
         </div>
-      </section>
-      <section class="section section__bride-groom u-margin-huge">
+        <div class="carousel-inner">
+            <div class="item active">
+                <figure class="container">
+                   <img src="img/slide1.png" alt="Slider Img" class="slider__img">
+                </figure>
+            </div>
+            <div class="item">
+              <figure class="container">
+                <img src="img/slide2.png" alt="Slider Img" class="slider__img">
+             </figure>
+            </div>
+            <div class="item">
+              <figure class="container">
+                <img src="img/slide3.png" alt="Slider Img" class="slider__img">
+             </figure>
+            </div>
+        </div>
+        <div class="carousel-control left">
+            <a class="arrow left"><svg class="slider__icon--arrows">
+              <use xlink:href="img/sprite.svg#icon-less-than"></use>
+            </svg></a>
+        </div>
+        <div class="carousel-control right">
+            <a class="arrow right"><svg class="slider__icon--arrows">
+              <use xlink:href="img/sprite.svg#icon-bigger-than"></use>
+            </svg></a>
+        </div>
+
+    </div>
+  </section>
+      <section class="section--not section__bride-groom u-margin-huge">
         <div class="our-stay__heading">
           <img
             class="rose our-stay__rose"
@@ -246,9 +244,12 @@
           />
         </div>
         <div class="bride-groom__container">
-          <div class="bride-groom__left">
+          <div class="bride-groom__left bride-groom__part">
             <figure class="bride-groom__figure">
-              <img class="bride-groom__img" src="img/john.png" alt="Groom" />
+              <img class="bride-groom__img" src="img/john.png" alt="Bride" />
+              <figcaption class="bride-groom__name"><span>John</span><svg class="bride-groom__icon">
+                <use xlink:href="img/sprite.svg#icon-rectangle-filled"></use></svg
+            ></figcaption>
             </figure>
             <p class="paragraph bride-groom__paragraph">
               Duis tristique elit at ullamcorper tempus. Mauris faucibus dapibus
@@ -257,35 +258,35 @@
             </p>
             <nav class="bride-groom__social">
               <ul class="bride-groom__nav">
-                <li class="bride-groom__nav__item">
-                  <a href="" class="bride-groom__nav__link"
-                    ><svg class="bride-groom__social-icon">
-                      <use xlink:href="img/sprite.svg#icon-ins"></use></svg
+                <li class="footer__item footer__social--item">
+                  <a href="" class="footer__link footer__social--link"
+                    ><svg class="footer__social--icon">
+                      <use xlink:href="img/sprite.svg#icon-facebook"></use></svg
                   ></a>
                 </li>
-                <li class="bride-groom__nav__item">
-                  <a href="" class="bride-groom__nav__link"
-                    ><svg class="bride-groom__social-icon">
-                      <use xlink:href="img/sprite.svg#icon-face"></use></svg
+                <li class="footer__item footer__social--item">
+                  <a href="" class="footer__link footer__social--link"
+                    ><svg class="footer__social--icon">
+                      <use xlink:href="img/sprite.svg#icon-pinterest"></use></svg
                   ></a>
                 </li>
-                <li class="bride-groom__nav__item">
-                  <a href="" class="bride-groom__nav__link"
-                    ><svg class="bride-groom__social-icon">
-                      <use xlink:href="img/sprite.svg#icon-pin"></use></svg
+                <li class="footer__item footer__social--item">
+                  <a href="" class="footer__link footer__social--link"
+                    ><svg class="footer__social--icon">
+                      <use xlink:href="img/sprite.svg#icon-instagram"></use></svg
                   ></a>
                 </li>
-                <li class="bride-groom__nav__item">
-                  <a href="" class="bride-groom__nav__link"
-                    ><svg class="bride-groom__social-icon">
-                      <use xlink:href="img/sprite.svg#icon-twi"></use></svg
+                <li class="footer__item footer__social--item">
+                  <a href="" class="footer__link footer__social--link"
+                    ><svg class="footer__social--icon">
+                      <use xlink:href="img/sprite.svg#icon-twitter"></use></svg
                   ></a>
                 </li>
               </ul>
             </nav>
           </div>
 
-          <div class="bride-groom__middle">
+          <div class="bride-groom__middle bride-groom__part">
             <div class="bride-groom__story bride-groom__element">
               <h2 class="heading-secondery bride-groom__heading">
                 Our Love Story
@@ -332,9 +333,12 @@
             </div>
           </div>
 
-          <div class="bride-groom__right">
+          <div class="bride-groom__right bride-groom__part">
             <figure class="bride-groom__figure">
               <img class="bride-groom__img" src="img/carol.png" alt="Bride" />
+              <figcaption class="bride-groom__name"><span>Carol</span><svg class="bride-groom__icon">
+                <use xlink:href="img/sprite.svg#icon-rectangle-filled"></use></svg
+            ></figcaption>
             </figure>
             <p class="paragraph bride-groom__paragraph">
               Duis tristique elit at ullamcorper tempus. Mauris faucibus dapibus
@@ -343,28 +347,28 @@
             </p>
             <nav class="bride-groom__social">
               <ul class="bride-groom__nav">
-                <li class="bride-groom__nav__item">
-                  <a href="" class="bride-groom__nav__link"
-                    ><svg class="bride-groom__social-icon">
-                      <use xlink:href="img/sprite.svg#icon-ins"></use></svg
+                <li class="footer__item footer__social--item">
+                  <a href="" class="footer__link footer__social--link"
+                    ><svg class="footer__social--icon">
+                      <use xlink:href="img/sprite.svg#icon-facebook"></use></svg
                   ></a>
                 </li>
-                <li class="bride-groom__nav__item">
-                  <a href="" class="bride-groom__nav__link"
-                    ><svg class="bride-groom__social-icon">
-                      <use xlink:href="img/sprite.svg#icon-face"></use></svg
+                <li class="footer__item footer__social--item">
+                  <a href="" class="footer__link footer__social--link"
+                    ><svg class="footer__social--icon">
+                      <use xlink:href="img/sprite.svg#icon-pinterest"></use></svg
                   ></a>
                 </li>
-                <li class="bride-groom__nav__item">
-                  <a href="" class="bride-groom__nav__link"
-                    ><svg class="bride-groom__social-icon">
-                      <use xlink:href="img/sprite.svg#icon-pin"></use></svg
+                <li class="footer__item footer__social--item">
+                  <a href="" class="footer__link footer__social--link"
+                    ><svg class="footer__social--icon">
+                      <use xlink:href="img/sprite.svg#icon-instagram"></use></svg
                   ></a>
                 </li>
-                <li class="bride-groom__nav__item">
-                  <a href="" class="bride-groom__nav__link"
-                    ><svg class="bride-groom__social-icon">
-                      <use xlink:href="img/sprite.svg#icon-twi"></use></svg
+                <li class="footer__item footer__social--item">
+                  <a href="" class="footer__link footer__social--link"
+                    ><svg class="footer__social--icon">
+                      <use xlink:href="img/sprite.svg#icon-twitter"></use></svg
                   ></a>
                 </li>
               </ul>
@@ -377,43 +381,43 @@
         <div class="events__container">
           <div class="events__item">
             <h2 class="heading-secondery events__heading">
-              Engagement <span class="events__number">01</span>
+              Engagement</span>
             </h2>
             <p class="paragraph events__details">
               Duis tristique elit at ullamcorper tempus. Mauris faucibus dapibus
               libero. Etiam at nunc in urna tempor fermentum sed sit amet velit.
               Quisque in felis.
             </p>
-            <a href="" class="events__cta">Read More</a>
+            <a href="" class="events__cta">Read More <span></span></a>
           </div>
 
           <div class="events__item">
             <h2 class="heading-secondery events__heading">
-              Save The Date <span class="events__number">02</span>
+              Save The Date</span>
             </h2>
             <p class="paragraph events__details">
               Duis tristique elit at ullamcorper tempus. Mauris faucibus dapibus
               libero. Etiam at nunc in urna tempor fermentum sed sit amet velit.
               Quisque in felis.
             </p>
-            <a href="" class="events__cta">Read More</a>
+            <a href="" class="events__cta">Read More <span></span></a>
           </div>
 
           <div class="events__item">
             <h2 class="heading-secondery events__heading">
-              Wedding Cermony <span class="events__number">03</span>
+              Weading Cermony</span>
             </h2>
             <p class="paragraph events__details">
               Duis tristique elit at ullamcorper tempus. Mauris faucibus dapibus
               libero. Etiam at nunc in urna tempor fermentum sed sit amet velit.
               Quisque in felis.
             </p>
-            <a href="" class="events__cta">Read More</a>
+            <a href="" class="events__cta">Read More <span></span></a>
           </div>
         </div>
       </section>
 
-      <section class="section section__our-stay u-margin-huge">
+      <section class="section--not section__our-stay u-margin-huge">
         <div class="our-stay__heading">
           <img
             class="rose our-stay__rose"
@@ -563,6 +567,8 @@
                 src="img/show1.png"
                 alt="Best Memories Photo"
               />
+                        <span class="our-story__gallery--figure__span">&plus;</span>
+
             </figure>
             <figure class="our-story__gallery--figure">
               <img
@@ -570,6 +576,8 @@
                 src="img/show2.png"
                 alt="Best Memories Photo"
               />
+                        <span class="our-story__gallery--figure__span">&plus;</span>
+
             </figure>
             <figure class="our-story__gallery--figure">
               <img
@@ -577,6 +585,8 @@
                 src="img/show3.png"
                 alt="Best Memories Photo"
               />
+                        <span class="our-story__gallery--figure__span">&plus;</span>
+
             </figure>
             <figure class="our-story__gallery--figure">
               <img
@@ -584,6 +594,8 @@
                 src="img/show4.png"
                 alt="Best Memories Photo"
               />
+                        <span class="our-story__gallery--figure__span">&plus;</span>
+
             </figure>
             <figure class="our-story__gallery--figure">
               <img
@@ -591,6 +603,8 @@
                 src="img/show5.png"
                 alt="Best Memories Photo"
               />
+                        <span class="our-story__gallery--figure__span">&plus;</span>
+
             </figure>
             <figure class="our-story__gallery--figure">
               <img
@@ -598,6 +612,8 @@
                 src="img/show6.png"
                 alt="Best Memories Photo"
               />
+                        <span class="our-story__gallery--figure__span">&plus;</span>
+
             </figure>
             <figure class="our-story__gallery--figure">
               <img
@@ -605,6 +621,8 @@
                 src="img/show7.png"
                 alt="Best Memories Photo"
               />
+                        <span class="our-story__gallery--figure__span">&plus;</span>
+
             </figure>
             <figure class="our-story__gallery--figure">
               <img
@@ -612,7 +630,12 @@
                 src="img/show8.png"
                 alt="Best Memories Photo"
               />
+              <span class="our-story__gallery--figure__span">&plus;</span>
+
             </figure>
+
+
+
           </div>
         </div>
       </section>
@@ -766,7 +789,7 @@
 
       <!-- ///////////////////////////////////////////////////////////////////////////////////////////////// -->
 
-      <section class="section section__when-where u-margin-huge">
+      <section class="section--not section__when-where u-margin-huge">
         <div class="when-where__header">
           <img
             class="our-story__gallery--rose"
@@ -975,6 +998,7 @@
             <a href="#" class="when-where__card__cta">Read More</a>
           </div>
         </div>
+
         <figure class="when-where__figure">
           <img
             src="img/when-where-left.png"
@@ -1058,7 +1082,7 @@
       <!-- //////////////////////////////////////////////////////////////////////////////////// -->
 
       <section class="section section__logo u-margin-med">
-        <div class="logo__container">
+        <!-- <div class="logo__container">
           <figure class="logo__figure">
             <img class="logo__img" src="img/logo1.png" alt="Logo" />
           </figure>
@@ -1082,12 +1106,23 @@
           <figure class="logo__figure">
             <img class="logo__img" src="img/logo6.png" alt="Logo" />
           </figure>
+        </div> -->
+
+        <div class="marquee">
+          <ul class="marquee-content">
+            <li><img class="logo__img" src="img/logo1.png" alt="Logo" /></i></li>
+            <li><img class="logo__img" src="img/logo2.png" alt="Logo" /></i></li>
+            <li><img class="logo__img" src="img/logo3.png" alt="Logo" /></i></li>
+            <li><img class="logo__img" src="img/logo4.png" alt="Logo" /></i></li>
+            <li><img class="logo__img" src="img/logo5.png" alt="Logo" /></i></li>
+            <li><img class="logo__img" src="img/logo6.png" alt="Logo" /></i></li>
+          </ul>
         </div>
       </section>
 
       <!-- ///////////////////////////////////////////////////////////////////////////// -->
-
       <section class="section section__home__gallery">
+
         <div class="home__gallery__desc">
           <svg class="home__gallery__icon">
             <use xlink:href="img/sprite.svg#icon-ins"></use>
@@ -1097,40 +1132,75 @@
         </div>
         <figure class="home__gallery__figure">
           <img
-            src="img/home-gallery-one.png"
+            src="img/home-gallery-1.png"
             alt="Home Gallery"
             class="home__gallery__img"
           />
+          <span class="home__gallery__figure__span">&plus;</span>
         </figure>
         <figure class="home__gallery__figure">
           <img
-            src="img/home-gallery-two.png"
+            src="img/home-gallery-2.png"
             alt="Home Gallery"
             class="home__gallery__img"
           />
+          <span class="home__gallery__figure__span">&plus;</span>
         </figure>
         <figure class="home__gallery__figure">
           <img
-            src="img/home-gallery-three.png"
+            src="img/home-gallery-3.png"
             alt="Home Gallery"
             class="home__gallery__img"
           />
+                    <span class="home__gallery__figure__span">&plus;</span>
         </figure>
         <figure class="home__gallery__figure">
           <img
-            src="img/home-gallery-four.png"
+            src="img/home-gallery-4.png"
             alt="Home Gallery"
             class="home__gallery__img"
           />
+                    <span class="home__gallery__figure__span">&plus;</span>
         </figure>
         <figure class="home__gallery__figure">
           <img
-            src="img/home-gallery-five.png"
+            src="img/home-gallery-5.png"
             alt="Home Gallery"
             class="home__gallery__img"
           />
+                    <span class="home__gallery__figure__span">&plus;</span>
         </figure>
+
+
+
       </section>
+      <div class="shadow">
+        <div class="preview-box" id="preview-box">
+          <div class="details">
+            <span class="title">Image <p class="current-img"></p> of <p class="total-img"></p></span>
+            <span class="close-icon">&#x2715</span>
+          </div>
+          <div class="image-box">
+            <div class="slide popup-prev">&#x3C;</div>
+            <div class="slide popup-next">&#65310;</div>
+            <img src="img/home-gallery-5.png" alt="" class="preview-img">
+          </div>
+        </div>
+      </div>
+
+      <div class="shadow-big">
+        <div class="preview-box-big" id="preview-box">
+          <div class="details-big">
+            <span class="title-big">Image <p class="current-img-big"></p> of <p class="total-img-big"></p></span>
+            <span class="close-icon-big">&#x2715</span>
+          </div>
+          <div class="image-box-big">
+            <div class="slide-big popup-prev-big">&#x3C;</div>
+            <div class="slide-big popup-next-big">&#65310;</div>
+            <img src="img/show1.png" alt="" class="preview-img-big">
+          </div>
+      </div>
+    </div>
     </main>
 
     <!-- Foter ////////////////////////////////////////////////////////////////////////////// -->
@@ -1265,6 +1335,7 @@
         <a class="footer__copy-right__link" href="#">Quenty</a>
       </p>
     </div>
+
     <script src="js/app.js"></script>
     <script src="js/slider.js"></script>
   </body>
