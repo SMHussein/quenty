@@ -1,0 +1,342 @@
+.slider {
+  position: relative;
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__icon--arrows {
+    width: 2.5rem;
+    height: 3rem;
+    fill: #ffffff;
+    transition: all 0.2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.carousel {
+  position: relative;
+  text-align: center;
+}
+
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-inner > .item {
+  position: relative;
+  display: none;
+  animation: 0.5s ease-in-out;
+  height: 70rem;
+}
+
+.carousel-inner > .active,
+.carousel-inner > .next {
+  display: block;
+}
+
+.carousel-inner > .next {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.carousel-inner > .to-left {
+  animation-name: left;
+}
+
+.carousel-inner > .from-right {
+  animation-name: right;
+}
+
+.carousel-inner > .to-right {
+  animation-name: right;
+  animation-direction: reverse;
+}
+
+.carousel-inner > .from-left {
+  animation-name: left;
+  animation-direction: reverse;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-control {
+  position: absolute;
+  cursor: pointer;
+  top: 50%;
+  color: #ffffff;
+  width: 5rem;
+  height: 5rem;
+  border: 1px solid #ffffff;
+  border-radius: 5rem;
+
+  @media only screen and (max-width: $bp-smallest) {
+    display: none;
+  }
+}
+
+.carousel-control.right {
+  right: 2%;
+  left: auto;
+}
+
+.carousel-control.left {
+  left: 2%;
+  right: auto;
+}
+
+.carousel-control > .arrow {
+  position: absolute;
+  display: inline-block;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: color 0.2s;
+
+  &:hover {
+    color: $color-pink;
+  }
+}
+
+.arrow:hover > .slider__icon--arrows {
+  fill: $color-pink;
+}
+
+@keyframes left {
+  from {
+    left: 0;
+  }
+  to {
+    left: -100%;
+  }
+}
+
+@keyframes right {
+  from {
+    left: 100%;
+  }
+  to {
+    left: 0;
+  }
+}
+
+//Image PopUP///////////////////////////////////////////////////////
+
+.preview-box,
+.preview-box-big {
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.9);
+  background: #fff;
+  width: 40vw;
+  height: 50vh;
+  opacity: 0;
+  pointer-events: none;
+  border-radius: 3px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  z-index: 120;
+
+  @media only screen and (max-width: $bp-tab) {
+    top: 50%;
+    width: 50vw;
+    height: 60vh;
+  }
+
+  @media only screen and (max-width: $bp-sm) {
+    width: 65vw;
+    height: 65vh;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    width: 90vw;
+    height: 50vh;
+  }
+
+  @media only screen and (max-width: $bp-400) {
+    width: 100vw;
+    height: 40vh;
+  }
+}
+.preview-box.show,
+.preview-box-big.show {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-50%, -50%) scale(1);
+  transition: all 0.3s ease;
+}
+.preview-box .details,
+.preview-box-big .details-big {
+  display: flex;
+  align-items: center;
+  padding: 12px 15px 12px 10px;
+  justify-content: space-between;
+  position: relative;
+  background-color: #ffffff;
+}
+.preview-box .details .title,
+.preview-box-big .details-big .title-big {
+  display: flex;
+  font-size: 18px;
+  font-weight: 400;
+  position: relative;
+}
+.details .title p,
+.details-big .title-big p {
+  margin: 0 5px;
+}
+.details .title p.current-img,
+.details-big .title-big p.current-img-big {
+  font-weight: 500;
+}
+.details .icon,
+.details-big .icon-big {
+  color: #007bff;
+  font-size: 20px;
+  cursor: pointer;
+}
+.preview-box .image-box,
+.preview-box-big .image-box-big {
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+.image-box .slide,
+.image-box-big .slide-big {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: $color-pink;
+  font-size: 3.5rem;
+  width: 5rem;
+  height: 5rem;
+  text-align: center;
+  border: 1px solid $color-pink;
+  border-radius: 5rem;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.slide.popup-prev,
+.slide-big.popup-prev-big {
+  left: 3%;
+}
+.slide.popup-next,
+.slide-big.popup-next-big {
+  right: 3%;
+}
+
+.close-icon,
+.close-icon-big {
+  font-size: 2rem;
+  cursor: pointer;
+}
+.image-box img,
+.image-box-big img {
+  width: 100%;
+  border-radius: 0 0 3px 3px;
+}
+.shadow,
+.shadow-big {
+  position: fixed;
+  z-index: 101;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.shadow-active {
+  display: block;
+}
+
+////////////////////Logo Slider ///////////////////////////////////
+
+:root {
+  --marquee-width: 100vw;
+  --marquee-height: 30vh;
+  /* --marquee-elements: 12; */ /* defined with JavaScript */
+  --marquee-elements-displayed: 4;
+  --marquee-element-width: calc(
+    var(--marquee-width) / var(--marquee-elements-displayed)
+  );
+  --marquee-animation-duration: calc(var(--marquee-elements) * 3s);
+}
+
+.marquee {
+  width: var(--marquee-width);
+  height: var(--marquee-height);
+  overflow: hidden;
+  position: relative;
+}
+.marquee:before,
+.marquee:after {
+  position: absolute;
+  top: 0;
+  width: 10rem;
+  height: 100%;
+  content: "";
+  z-index: 1;
+}
+
+.marquee-content {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  animation: scrolling var(--marquee-animation-duration) linear infinite;
+}
+/* .marquee-content:hover {
+  animation-play-state: paused;
+} */
+@keyframes scrolling {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(
+      calc(-1 * var(--marquee-element-width) * var(--marquee-elements))
+    );
+  }
+}
+.marquee-content li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* text-align: center; */
+  flex-shrink: 0;
+  width: var(--marquee-element-width);
+  max-height: 100%;
+  white-space: nowrap;
+}
+
+.marquee-content li img {
+  width: 50%;
+  height: 50%;
+}
+
+@media (max-width: 600px) {
+  :root {
+    --marquee-width: 100vw;
+    --marquee-height: 16vh;
+    --marquee-elements-displayed: 3;
+  }
+  .marquee:before,
+  .marquee:after {
+    width: 5rem;
+  }
+}
