@@ -4,6 +4,7 @@
   align-items: start;
   grid-gap: 8rem;
   padding: 7rem 11rem;
+  color: $color-header;
 
   @media only screen and (max-width: $bp-large) {
     padding: 7rem 5rem;
@@ -179,7 +180,6 @@
         font-size: 1.7rem;
         color: $color-header;
         transition: all 0.2s;
-        letter-spacing: 0.2rem;
       }
     }
   }
@@ -345,7 +345,7 @@
     font-size: 2rem;
     font-weight: 500;
     letter-spacing: 0.2rem;
-    margin-bottom: 1.3rem;
+    margin-bottom: 1.7rem;
     color: $color-header;
     transition: all 0.2s;
   }

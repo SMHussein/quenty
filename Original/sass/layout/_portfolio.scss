@@ -97,14 +97,17 @@
     }
 
     &--heading {
-      font-size: 3.1rem;
-      margin-bottom: 1rem;
-      color: #3f3f3f;
+      font-size: 3rem;
+      margin-bottom: 1.5rem;
+      color: $color-header;
+      font-weight: 400;
     }
 
     &--date {
-      color: $color-pink;
-      margin-bottom: 1rem;
+      font-size: 1.5rem;
+      color: rgba($color-header, 0.75);
+      margin-bottom: 1.5rem;
+      font-weight: 600;
     }
   }
 }
