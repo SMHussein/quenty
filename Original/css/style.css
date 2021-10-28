@@ -691,7 +691,6 @@ body {
           cursor: pointer; }
           .header__right .nav-main__search .input:focus {
             width: 100%;
-            height: 100%;
             border-radius: 1rem;
             border-color: #ff656b; }
         .header__right .nav-main__search .input:focus + .btn__search {
