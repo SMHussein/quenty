@@ -221,10 +221,6 @@
         text-align: right;
 
         .input {
-          // max-width: 4rem;
-          // height: 4rem;
-          // background-color: transparent;
-          // border: 1px solid $color-dark-2;
           padding: 0.5rem 0.5rem;
           width: 3rem;
           height: 3rem;
@@ -238,7 +234,6 @@
 
           &:focus {
             width: 100%;
-            height: 100%;
             border-radius: 1rem;
             border-color: $color-pink;
           }
@@ -325,7 +320,8 @@
     padding: 0 7.5rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 4rem;
+    grid-column-gap: 4rem;
+    grid-row-gap: 7rem;
     text-align: center;
 
     @media only screen and (max-width: $bp-tab) {
@@ -350,9 +346,13 @@
   }
 
   &__heading {
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 500;
     margin: 2rem 0 1.5rem 0;
+  }
+
+  &__paragraph {
+    color: rgba($color-header, 0.75);
   }
 }
 
@@ -429,6 +429,8 @@
       position: absolute;
       background-color: #ffbcbe;
       border-radius: 10rem;
+      max-width: 0;
+      transition: max-width 1.5s;
       &--1 {
         width: 75%;
       }
@@ -440,6 +442,10 @@
       }
       &--4 {
         width: 83%;
+      }
+
+      &--right {
+        max-width: 100%;
       }
     }
   }

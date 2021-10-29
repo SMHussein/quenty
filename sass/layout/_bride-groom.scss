@@ -128,7 +128,7 @@
 
   &__paragraph {
     margin-bottom: 3rem;
-    padding: 0 3rem;
+    padding: 0 1.2rem;
   }
 
   &__nav {
@@ -149,16 +149,21 @@
   }
 
   &__heading {
-    font-size: 3.1rem;
-    margin-bottom: 1rem;
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    color: $color-header;
+    font-weight: 400;
   }
 
   &__date {
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    color: rgba($color-header, 0.65);
+    font-weight: 600;
   }
 
   &__details {
-    padding: 0 3rem;
+    padding: 0 1.2rem;
+    color: rgba($color-header, 0.75);
     &:not(:last-child) {
       margin-bottom: 1.5rem;
       @media only screen and (max-width: $bp-large) {
@@ -212,7 +217,7 @@
     &:link {
       color: $color-header;
       text-decoration: none;
-      font-size: 1.5rem;
+      font-size: 1.7rem;
       font-weight: 600;
       transition: all 0.2s;
     }
@@ -222,7 +227,7 @@
 
     span {
       display: block;
-      width: 5%;
+      width: 6%;
       height: 1px;
       background-color: currentColor;
       margin: 0.5rem auto;
@@ -253,8 +258,10 @@
   }
 
   &__heading {
-    font-size: 3.1rem;
-    margin-bottom: 2.5rem;
+    font-size: 3rem;
+    color: $color-header;
+    font-weight: 400;
+    margin-bottom: 3rem;
   }
 
   &__figure {
@@ -305,13 +312,13 @@
 
   &__location {
     font-size: 2.5rem;
-    color: #3f3f3f;
+    color: #3a3a3a;
     margin-bottom: 3rem;
     font-weight: 300;
   }
 
   &__paragraph {
-    margin-bottom: 2.5rem;
+    margin-bottom: 3rem;
   }
 
   &__cta {
@@ -319,10 +326,18 @@
     &:link,
     &:visited {
       text-decoration: none;
-      font-size: 1.5rem;
-      color: #656565;
-      font-weight: 500;
+      font-size: 1.7rem;
+      color: #3a3a3a;
+      font-weight: 600;
       transition: all 0.2s;
+    }
+
+    span {
+      display: block;
+      width: 6%;
+      height: 1px;
+      background-color: currentColor;
+      margin: 0.5rem auto;
     }
 
     &:hover {

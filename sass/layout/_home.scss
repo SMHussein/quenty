@@ -19,7 +19,7 @@
 
   &__title {
     font-size: 2.5rem;
-    font-weight: 700;
+    font-weight: 500;
     margin-bottom: 2.7rem;
     letter-spacing: 0.5rem;
     text-transform: uppercase;
@@ -209,6 +209,8 @@
   }
 
   &__attending {
+    position: relative;
+    z-index: 2;
   }
 
   &__line {

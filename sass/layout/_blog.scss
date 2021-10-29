@@ -4,6 +4,7 @@
   align-items: start;
   grid-gap: 8rem;
   padding: 7rem 11rem;
+  color: $color-header;
 
   @media only screen and (max-width: $bp-large) {
     padding: 7rem 5rem;
@@ -179,7 +180,6 @@
         font-size: 1.7rem;
         color: $color-header;
         transition: all 0.2s;
-        letter-spacing: 0.2rem;
       }
     }
   }
@@ -298,6 +298,7 @@
 }
 
 .blog__stories {
+  display: block;
   &__container {
     display: grid;
     grid-template-columns: repeat(2, auto);
@@ -345,7 +346,7 @@
     font-size: 2rem;
     font-weight: 500;
     letter-spacing: 0.2rem;
-    margin-bottom: 1.3rem;
+    margin-bottom: 1.7rem;
     color: $color-header;
     transition: all 0.2s;
   }
@@ -411,5 +412,17 @@
       height: 1.5rem;
       fill: #ffffff;
     }
+  }
+}
+
+.blog__stories__container__col-3 {
+  grid-template-columns: repeat(3, auto);
+
+  @media only screen and (max-width: $bp-largest) {
+    grid-template-columns: repeat(2, auto);
+  }
+
+  @media only screen and (max-width: $bp-large) {
+    grid-template-columns: auto;
   }
 }

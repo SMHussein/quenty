@@ -10,7 +10,9 @@ html {
   // this defiens what 1 rem is
   font-size: 62.5%; //1rem = 10px; 10px/16px = 62.5%
   scroll-behavior: smooth;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
   // @media only screen and (max-width: $bp-1000){
   //     font-size: 56.25%; //1rem = 9px; 9px/16px = 56.25%
   // }
@@ -28,13 +30,10 @@ body {
   box-sizing: border-box;
   background-color: #ffffff;
   color: $color-main-para;
+  position: relative;
 }
 
-::selection {
-  color: $color-pink;
-  background-color: $color-main-para;
-}
-
-.container-fluid {
+.container {
   width: 100%;
+  max-width: 144rem;
 }
