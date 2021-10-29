@@ -223,7 +223,9 @@
           </div>
         </div>
       </section>
-      <section class="section section__event-planing u-margin-top container">
+      <section
+        class="section--not section__event-planing u-margin-top container"
+      >
         <div class="event-planing__text">
           <h2 class="heading-secondery event-planing__heading">
             Functionalities & Simple Customization.
@@ -295,7 +297,7 @@
         </div>
       </section>
       <section class="section section__event-planing__gallery container">
-        <figure class="event-planing__gallery__figures">
+        <!-- <figure class="event-planing__gallery__figures">
           <img
             src="img/gallery1.png"
             alt="Gallery Image 1"
@@ -316,7 +318,42 @@
             alt="Gallery Image 4"
             class="event-planing__gallery__figure"
           />
+        </figure> -->
+        <div class="event-planing__gallery__figures">
+        <figure class="home__gallery__figure">
+          <img
+          src="img/gallery1.png"
+          alt="Gallery Image 1"
+            class="home__gallery__img"
+          />
+          <span class="home__gallery__figure__span">&plus;</span>
         </figure>
+        <figure class="home__gallery__figure">
+          <img
+          src="img/gallery2.png"
+          alt="Gallery Image 2"
+            class="home__gallery__img"
+          />
+                    <span class="home__gallery__figure__span">&plus;</span>
+        </figure>
+        <figure class="home__gallery__figure">
+          <img
+          src="img/gallery3.png"
+          alt="Gallery Image 3"
+            class="home__gallery__img"
+          />
+                    <span class="home__gallery__figure__span">&plus;</span>
+        </figure>
+        <figure class="home__gallery__figure">
+          <img
+          src="img/gallery4.png"
+          alt="Gallery Image 4"
+            class="home__gallery__img"
+          />
+                    <span class="home__gallery__figure__span">&plus;</span>
+        </figure>
+      </div>
+
       </section>
 
       <section
@@ -394,6 +431,32 @@
           </div>
         </div>
       </section>
+
+      <div class="shadow container">
+        <div class="preview-box" id="preview-box">
+          <div class="details">
+            <span class="title">Image <p class="current-img"></p> of <p class="total-img"></p></span>
+            <span class="close-icon">&#x2715</span>
+          </div>
+          <div class="image-box">
+            <!-- <div class="slide popup-prev">&#x3C;</div>
+            <div class="slide popup-next">&#65310;</div> -->
+
+            <div class="slide popup-prev">
+              <a class="slide--arrow left"><svg class="slide--icon">
+                <use xlink:href="img/sprite.svg#icon-less-than"></use>
+              </svg></a>
+          </div>
+          <div class="slide popup-next">
+              <a class="slide--arrow right"><svg class="slide--icon">
+                <use xlink:href="img/sprite.svg#icon-bigger-than"></use>
+              </svg></a>
+          </div>
+
+            <img src="img/gallery1.png" alt="" class="preview-img">
+          </div>
+        </div>
+      </div>
     </main>
     <!-- Footer ***************************************************************** -->
 
@@ -529,5 +592,7 @@
     </div>
 
     <script src="js/app.js"></script>
+    <script src="js/rangeAni.js"></script>
+    <script src="js/about-us.js"></script>
   </body>
 </html>

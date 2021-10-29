@@ -209,6 +209,8 @@
   }
 
   &__attending {
+    position: relative;
+    z-index: 2;
   }
 
   &__line {

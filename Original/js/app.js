@@ -105,3 +105,54 @@ window.addEventListener("scroll", () => {
     }
   }
 });
+
+////////////Blog Stories Col-3////////////////////////////
+
+let storiesCol3 = document.querySelector(".blog__stories__container");
+let storiesCol3Link = document.querySelector(".blog__right__link--col-3");
+let storiesCol2Link = document.querySelector(".blog__right__link--col-2");
+let storiesList = document.querySelector(".blog__right__link--list");
+let storiesLinks = document.querySelectorAll(".blog__right__link");
+let listIcons = document.querySelectorAll(".blog__right__icon");
+
+let blogStoris = document.querySelector(".blog__stories");
+let blogList = document.querySelector(".blog__list");
+
+for (let i = 0; i <= 2; i++) {
+  storiesLinks[i].addEventListener("click", (e) => {
+    e.preventDefault();
+  });
+}
+
+storiesCol3Link.addEventListener("click", () => {
+  for (let icon of listIcons) {
+    icon.classList.remove("blog__right__icon--active");
+  }
+  storiesCol3.classList.add("blog__stories__container__col-3");
+  storiesCol3Link.classList.add("blog__right__icon--active");
+
+  blogStoris.classList.remove("blog__storis--hide");
+  blogList.classList.remove("blog__list--active");
+});
+
+storiesCol2Link.addEventListener("click", () => {
+  for (let icon of listIcons) {
+    icon.classList.remove("blog__right__icon--active");
+  }
+  storiesCol3.classList.remove("blog__stories__container__col-3");
+  storiesCol2Link.classList.add("blog__right__icon--active");
+
+  blogStoris.classList.remove("blog__storis--hide");
+  blogList.classList.remove("blog__list--active");
+});
+
+storiesList.addEventListener("click", () => {
+  for (let icon of listIcons) {
+    icon.classList.remove("blog__right__icon--active");
+  }
+  storiesCol3.classList.remove("blog__stories__container__col-3");
+  storiesList.classList.add("blog__right__icon--active");
+
+  blogStoris.classList.add("blog__storis--hide");
+  blogList.classList.add("blog__list--active");
+});

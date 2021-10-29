@@ -429,6 +429,8 @@
       position: absolute;
       background-color: #ffbcbe;
       border-radius: 10rem;
+      max-width: 0;
+      transition: max-width 1.5s;
       &--1 {
         width: 75%;
       }
@@ -440,6 +442,10 @@
       }
       &--4 {
         width: 83%;
+      }
+
+      &--right {
+        max-width: 100%;
       }
     }
   }

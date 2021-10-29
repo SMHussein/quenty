@@ -7,7 +7,9 @@
 .our-stay__heading,
 .our-stay__gallery--item,
 .our-services__card,
-.blog__ani {
+.blog__ani,
+.event-planing__text,
+.event-planing__range__container {
   opacity: 0;
   transform: translateY(100%);
   transition: all 1s;

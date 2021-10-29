@@ -1,4 +1,5 @@
 .blog__list {
+  display: none;
   &__article {
     display: grid;
     grid-template-columns: 1fr 10vw 1fr;
@@ -142,4 +143,11 @@
   &__director:hover > span {
     width: 100%;
   }
+}
+
+.blog__list--active {
+  display: block;
+}
+.blog__storis--hide {
+  display: none;
 }

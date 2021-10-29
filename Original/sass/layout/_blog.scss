@@ -298,6 +298,7 @@
 }
 
 .blog__stories {
+  display: block;
   &__container {
     display: grid;
     grid-template-columns: repeat(2, auto);
@@ -411,5 +412,17 @@
       height: 1.5rem;
       fill: #ffffff;
     }
+  }
+}
+
+.blog__stories__container__col-3 {
+  grid-template-columns: repeat(3, auto);
+
+  @media only screen and (max-width: $bp-largest) {
+    grid-template-columns: repeat(2, auto);
+  }
+
+  @media only screen and (max-width: $bp-large) {
+    grid-template-columns: auto;
   }
 }
