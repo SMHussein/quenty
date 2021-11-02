@@ -1,0 +1,85 @@
+body {
+  font-family: "Dosis", sans-serif;
+  font-weight: 400;
+}
+
+.heading-primary,
+.heading-secondery {
+  font-family: "Great Vibes", cursive;
+  font-weight: 400;
+}
+
+.paragraph {
+  font-size: 1.7rem;
+  letter-spacing: 0.12rem;
+  line-height: 1.5;
+}
+
+// .heading-primary {
+//     display: inline-block;
+//     text-align: center;
+//     line-height: 1.17;
+
+//     @media only screen and (max-width: $bp-1000){
+//         text-align: left;
+//     }
+
+//     @media only screen and (max-width:$bp-smallest) {
+//         text-align: center;
+//     }
+
+//     &--main {
+//         display: block;
+//         font-size: 9rem;
+
+//         @media only screen and (max-width: $bp-1000){
+//             font-size: 8rem;
+//         }
+//         @media only screen and (max-width:$bp-smallest) {
+//             font-size: 5rem;
+//         }
+//     }
+
+//     &--sub {
+//         display: block;
+//         font-family: 'Poppins', sans-serif;
+//         font-size: 2rem;
+//         font-weight: 300;
+//         color: $color-Grey-light-5;
+//         margin-top: 1.5rem;
+//         margin-bottom: 4rem;
+//         line-height: 1.2;
+//         letter-spacing: .25rem;
+
+//         @media only screen and (max-width:$bp-smallest) {
+//             font-size: 1.5rem;
+//         }
+//     }
+// }
+
+// .heading-secondery {
+//     line-height: 1;
+//     font-size: 6rem;
+
+//     @media only screen and (max-width: $bp-1000){
+//         font-size: 4rem;
+//     }
+//     @media only screen and (max-width:$bp-smallest) {
+//         font-size: 3rem;
+//     }
+// }
+
+// .heading-tertiary {
+//     font-size: 2.3rem;
+//     font-weight: 500;
+// }
+
+// .paragraph {
+//     font-size: 1.8rem;
+//     color:$color-Grey-light-5;
+//     line-height: 1.5;
+
+//     @media only screen and (max-width:$bp-med) {
+//         font-size: 1.6rem;
+//     }
+// }

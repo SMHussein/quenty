@@ -18,9 +18,9 @@
   </head>
 
   <body>
-    <header class="header container">
+    <header>
       <!-- //Collaps********************************************** -->
-
+      <div class="header ">
       <div class="header__collapse">
         <div class="header__collapse__button">
           <span class="header__collapse__dash header__collapse__dash--1"></span>
@@ -35,8 +35,9 @@
             </li>
             <li class="header__collapse__item">
               <a href="bride-groom.html" class="header__collapse__link"
-                >Bride and Grooms</a
+                >Bride and Groom</a
               >
+
             </li>
             <li class="header__collapse__item">
               <a href="our-story.html" class="header__collapse__link"
@@ -64,7 +65,7 @@
 
       <!-- //Collaps********************************************** -->
 
-      <div class="header__logo">
+      <div class="header__logo ">
         <h1 class="heading-primary">
           Quenty Wed<svg class="star">
             <use xlink:href="img/sprite.svg#icon-star"></use>
@@ -124,7 +125,7 @@
               <a href="bride-groom.html" class="nav-main__link--main"
                 ><svg class="icon">
                   <use xlink:href="img/sprite.svg#icon-rectangle"></use></svg
-                >Bride and Grooms</a
+                >Bride and Groom</a
               >
             </li>
             <li class="nav-main__item">
@@ -166,13 +167,14 @@
           </form>
         </nav>
       </div>
+    </div>
     </header>
 
     <main>
 
-      <section class="section--not section__slider container">
+      <section class="section--not section__slider container-fluid">
       <div class="carousel">
-        <div class="slider__heading">
+        <div class="slider__heading container">
           <h3 class="heading-tertiary slider__title">Getting Married</h3>
           <h2 class="heading-secondery slider__heading-primary">
             Carol & John
@@ -187,6 +189,7 @@
               <use xlink:href="img/sprite.svg#icon-home-diamond"></use>
             </svg>
           </div>
+
           <div class="btn--parent ">
             <a
               href="our-services.html"
@@ -195,7 +198,7 @@
             >
           </div>
         </div>
-        <div class="carousel-inner">
+        <div class="carousel-inner ">
             <div class="item active">
                 <figure class="carousel__container">
                    <img src="img/slide1.png" alt="Slider Img" class="slider__img">
@@ -212,7 +215,10 @@
              </figure>
             </div>
         </div>
-        <div class="carousel-control left">
+        <div class="container carousel-control__container">
+
+        
+        <div class="carousel-control left ">
             <a class="arrow left"><svg class="slider__icon--arrows">
               <use xlink:href="img/sprite.svg#icon-less-than"></use>
             </svg></a>
@@ -222,10 +228,13 @@
               <use xlink:href="img/sprite.svg#icon-bigger-than"></use>
             </svg></a>
         </div>
-
+      </div>
     </div>
   </section>
-      <section class="section--not section__bride-groom u-margin-huge container">
+
+  
+      <section class="section--not section__bride-groom u-margin-huge container-fluid">
+        <div class="container">
         <div class="our-stay__heading">
           <img
             class="rose our-stay__rose"
@@ -244,6 +253,7 @@
           />
         </div>
         <div class="bride-groom__container">
+
           <div class="bride-groom__left bride-groom__part">
             <figure class="bride-groom__figure">
               <img class="bride-groom__img" src="img/john.png" alt="Bride" />
@@ -375,10 +385,11 @@
             </nav>
           </div>
         </div>
+      </div>
       </section>
 
-      <section class="section section__events u-margin-top container">
-        <div class="events__container">
+      <section class="section section__events u-margin-top container-fluid">
+        <div class="events__container container">
           <div class="events__item">
             <h2 class="heading-secondery events__heading">
               Engagement</span>
@@ -417,7 +428,8 @@
         </div>
       </section>
 
-      <section class="section--not section__our-stay u-margin-huge container">
+      <section class="section--not section__our-stay u-margin-huge container-fluid">
+        <div class="container">
         <div class="our-stay__heading">
           <img
             class="rose our-stay__rose"
@@ -436,7 +448,8 @@
           />
         </div>
         <div class="our-stay__gallery">
-          <div class="our-stay__gallery--item">
+
+          <div class="our-stay__gallery--item our-stay__gallery--item--1">
             <figure class="our-stay__gallery--figure">
               <img
                 src="img/stay1.png"
@@ -458,7 +471,7 @@
             </div>
           </div>
 
-          <div class="our-stay__gallery--item">
+          <div class="our-stay__gallery--item our-stay__gallery--item--2">
             <div class="our-stay__gallery--text">
               <h3 class="heading-tertiary our-stay__gallery--heading">
                 First Time We Meet
@@ -481,7 +494,7 @@
             </figure>
           </div>
 
-          <div class="our-stay__gallery--item">
+          <div class="our-stay__gallery--item our-stay__gallery--item--3">
             <figure class="our-stay__gallery--figure">
               <img
                 src="img/stay3.png"
@@ -503,7 +516,7 @@
             </div>
           </div>
 
-          <div class="our-stay__gallery--item">
+          <div class="our-stay__gallery--item our-stay__gallery--item--4">
             <div class="our-stay__gallery--text">
               <h3 class="heading-tertiary our-stay__gallery--heading">
                 First Time We Meet
@@ -524,10 +537,26 @@
               />
             </figure>
           </div>
+
+          <div class="hearts__line">
+            <span class="hearts__line--span"><svg class="hearts__line--icon hearts__line--icon--1">
+              <use xlink:href="img/SVGs/empty-heart.svg#empty-heart"></use></svg
+          ></span>
+          <span class="hearts__line--span"><svg class="hearts__line--icon hearts__line--icon--2">
+            <use xlink:href="img/SVGs/empty-heart.svg#empty-heart"></use></svg
+        ></span>
+        <span class="hearts__line--span"><svg class="hearts__line--icon hearts__line--icon--3">
+          <use xlink:href="img/SVGs/empty-heart.svg#empty-heart"></use></svg
+      ></span>
+      <span class="hearts__line--span"><svg class="hearts__line--icon hearts__line--icon--4">
+        <use xlink:href="img/SVGs/empty-heart.svg#empty-heart"></use></svg
+    ></span>
+          </div>
         </div>
+      </div>
       </section>
 
-      <section class="section section__our-story u-margin-huge container">
+      <section class="section section__our-story u-margin-huge container-fluid">
         <img
           src="img/corner-rose-left.png"
           alt="Faded Rose"
@@ -538,7 +567,7 @@
           alt="Faded Rose"
           class="corner-rose__img corner-rose__img--right"
         />
-        <div class="our-story__gallery--container">
+        <div class="our-story__gallery--container container">
           <div class="our-story__gallery--header">
             <img
               class="our-story__gallery--rose"
@@ -640,7 +669,8 @@
         </div>
       </section>
 
-      <section class="section section__main-event u-margin-huge container">
+      <section class="section section__main-event u-margin-huge container-fluid">
+        <div class="container">
         <div class="our-stay__heading">
           <img
             class="rose our-stay__rose"
@@ -719,9 +749,11 @@
             <a href="" class="main-event__cta">Read More <span></span></a>
           </div>
         </div>
+      </div>
       </section>
 
-      <section class="section section__rsvp u-margin-huge container">
+      <section class="section section__rsvp u-margin-huge container-fluid">
+        <div class="rsvp__container container">
         <form action="" class="rsvp__form">
           <img
             src="img/decor left.png"
@@ -785,11 +817,13 @@
             Let your visitors RSVP to the wedding
           </h2>
         </div>
+      </div>
       </section>
 
       <!-- ///////////////////////////////////////////////////////////////////////////////////////////////// -->
 
-      <section class="section--not section__when-where u-margin-huge container">
+      <section class="section--not section__when-where u-margin-huge container-fluid">
+        <div class="container">
         <div class="when-where__header">
           <img
             class="our-story__gallery--rose"
@@ -873,7 +907,9 @@
                 +977-9804938394
               </p>
             </div>
-            <a href="#" class="when-where__card__cta">Read More</a>
+            <a href="#" class="when-where__card__cta">Read More
+              <span class="when-where__card__span"></span>
+            </a>
           </div>
 
           <div class="when-where__card">
@@ -935,7 +971,9 @@
                 +977-9804938394
               </p>
             </div>
-            <a href="#" class="when-where__card__cta">Read More</a>
+            <a href="#" class="when-where__card__cta">Read More
+              <span class="when-where__card__span"></span>
+            </a>
           </div>
 
           <div class="when-where__card">
@@ -995,7 +1033,9 @@
                 +977-9804938394
               </p>
             </div>
-            <a href="#" class="when-where__card__cta">Read More</a>
+            <a href="#" class="when-where__card__cta">Read More
+              <span class="when-where__card__span"></span>
+            </a>
           </div>
         </div>
 
@@ -1011,11 +1051,13 @@
             class="when-where__decor__img when-where__decor__img--2"
           />
         </figure>
+      </div>
       </section>
 
       <!-- ///////////////////////////////////////////////////////////////////////////////////////////////// -->
 
-      <section class="section section__best__wishes u-margin-huge container">
+      <section class="section section__best__wishes u-margin-huge container-fluid">
+        <div class="container">
         <div class="when-where__header">
           <img
             class="our-story__gallery--rose"
@@ -1077,13 +1119,14 @@
             <p class="paragraph card__paragraph">05 Dec 2017 - IN Stories, Weeding</p>
           </div>
         </div>
+      </div>
       </section>
 
       <!-- //////////////////////////////////////////////////////////////////////////////////// -->
 
-      <section class="section section__logo u-margin-med container">
+      <section class="section section__logo u-margin-med container-fluid">
 
-        <div class="marquee">
+        <div class="marquee container">
           <ul class="marquee-content">
             <li><img class="logo__img" src="img/logo1.png" alt="Logo" /></i></li>
             <li><img class="logo__img" src="img/logo2.png" alt="Logo" /></i></li>
@@ -1096,8 +1139,8 @@
       </section>
 
       <!-- ///////////////////////////////////////////////////////////////////////////// -->
-      <section class="section section__home__gallery container">
-
+      <section class="section section__home__gallery container-fluid">
+<div class="home__gallery__container">
         <div class="home__gallery__desc">
           <svg class="home__gallery__icon">
             <use xlink:href="img/sprite.svg#icon-ins"></use>
@@ -1145,11 +1188,10 @@
           />
                     <span class="home__gallery__figure__span">&plus;</span>
         </figure>
-
-
-
+      </div>
       </section>
-      <div class="shadow container">
+
+      <div class="shadow container-fluid">
         <div class="preview-box" id="preview-box">
           <div class="details">
             <span class="title">Image <p class="current-img"></p> of <p class="total-img"></p></span>
@@ -1173,7 +1215,7 @@
         </div>
       </div>
 
-      <div class="shadow-big container">
+      <div class="shadow-big container-fluid">
         <div class="preview-box-big" id="preview-box">
           <div class="details-big">
             <span class="title-big">Image <p class="current-img-big"></p> of <p class="total-img-big"></p></span>
@@ -1200,7 +1242,8 @@
 
     <!-- Foter ////////////////////////////////////////////////////////////////////////////// -->
 
-    <footer class="footer container">
+    <footer class="footer--main container-fluid">
+      <div class="footer container">
       <div class="footer__about">
         <h3 class="heading-tertiary footer__heading">About Quenty</h3>
         <p class="paragraph footer__paragraph">
@@ -1323,12 +1366,15 @@
           </ul>
         </nav>
       </div>
+    </div>
     </footer>
-    <div class="footer__copy-right container">
+    <div class=" container-fluid footer__copy-right--main">
+      <div class="container footer__copy-right">
       <p class="paragraph footer__copy-right__paragraph">
         Copyright © All Rights Reserved
         <a class="footer__copy-right__link" href="#">Quenty</a>
       </p>
+    </div>
     </div>
 
     <script src="js/app.js"></script>

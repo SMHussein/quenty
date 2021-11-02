@@ -1,15 +1,12 @@
 .section__our-story {
   position: relative;
+  background-color: $color-grey;
 }
 
 .our-story {
   &__gallery {
-    &--container {
-      background-color: $color-grey;
-    }
-
     &--header {
-      height: 50vh;
+      height: 43vh;
       display: grid;
       grid-template-columns: min-content 33rem min-content;
       grid-template-rows: repeat(2, min-content);
@@ -64,6 +61,7 @@
       height: 100%;
       position: relative;
       cursor: pointer;
+      overflow: hidden;
 
       &__span {
         position: absolute;
@@ -88,10 +86,15 @@
       color: #ffffff;
     }
 
+    &--figure:hover > &--img {
+      transform: scale(1.1);
+    }
+
     &--img {
       width: 100%;
       height: 100%;
       object-fit: cover;
+      transition: all 0.2s;
     }
   }
 }
