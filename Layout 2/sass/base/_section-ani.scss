@@ -1,0 +1,76 @@
+// .section,
+// .card,
+// .card__btn,
+// .bride-groom__part,
+// .when-where__card,
+// .when-where__header,
+// .our-stay__heading,
+// .our-stay__gallery--item,
+// .our-services__card,
+// .blog__ani,
+// .event-planing__text,
+// .event-planing__range__container {
+//   opacity: 0;
+//   transform: translateY(100%);
+//   transition: all 1s;
+// }
+
+// .section--active {
+//   opacity: 1;
+//   transform: translateY(0);
+// }
+
+// .our-stay {
+//   &--active {
+//     opacity: 1;
+//     transform: translateY(0);
+//   }
+// }
+
+// @keyframes moveInLeft {
+//   0% {
+//     opacity: 0;
+//     transform: translateX(-10rem);
+//   }
+
+//   80% {
+//     transform: translateX(1rem);
+//   }
+
+//   100% {
+//     opacity: 1;
+//     transform: translate(0);
+//   }
+// }
+
+// @keyframes moveInRight {
+//   0% {
+//     opacity: 0;
+//     transform: translateX(10rem);
+//   }
+
+//   80% {
+//     transform: translateX(-1rem);
+//   }
+
+//   100% {
+//     opacity: 1;
+//     transform: translate(0);
+//   }
+// }
+
+// @keyframes moveInBottom {
+//   0% {
+//     opacity: 0;
+//     transform: translateY(10rem);
+//   }
+
+//   80% {
+//     transform: translateY(-1rem);
+//   }
+
+//   100% {
+//     opacity: 1;
+//     transform: translateY(0);
+//   }
+// }

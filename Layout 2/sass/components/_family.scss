@@ -1,0 +1,186 @@
+.family__honor {
+  margin-top: 5rem;
+}
+
+.honor {
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__figure {
+    border: 3px solid transparent;
+    border-radius: 50%;
+    width: 9rem;
+    height: 9rem;
+    transition: all 0.2s;
+    cursor: pointer;
+    margin-bottom: 1.5rem;
+
+    &:hover {
+      border: 3px solid $color-primary;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    display: block;
+  }
+
+  &__name {
+    font-size: 3rem;
+    color: $color-primary;
+  }
+
+  &__span {
+    display: inline-block;
+    width: 1.1rem;
+    height: 2px;
+    background-color: $color-primary;
+    margin: 0 3rem;
+  }
+
+  &__gallery {
+    margin-top: 8rem;
+    padding: 0 7.5rem;
+    position: relative;
+    &__container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 8.5rem;
+      padding-bottom: 7rem;
+      border-bottom: 1px solid $color-primary;
+
+      @media only screen and (max-width: $bp-large) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      @media only screen and (max-width: $bp-small) {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    &__box {
+      text-align: center;
+    }
+
+    &__figure {
+      margin-bottom: 2.5rem;
+    }
+
+    &__img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    &__name {
+      font-size: 3rem;
+      margin-bottom: 1.5rem;
+      color: $color-primary;
+    }
+
+    &__paragraph {
+      font-weight: 500;
+      margin-bottom: 4rem;
+    }
+
+    &__list {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__item {
+      color: $color-primary;
+      border: 1px solid currentColor;
+      border-radius: 50%;
+      transition: all 0.2s;
+      &:not(:last-child) {
+        margin-right: 2.5rem;
+      }
+
+      &:hover {
+        color: $color-para;
+      }
+    }
+
+    &__link {
+      &,
+      &:visited,
+      &:link {
+        color: inherit;
+        text-decoration: none;
+        display: inline-block;
+        width: 4rem;
+        height: 4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
+    &__icon {
+      width: 1.5rem;
+      height: 1.5rem;
+      fill: currentColor;
+      transition: all 0.2s;
+    }
+
+    &__buttons {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%, 50%);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: $color-white;
+      z-index: 1;
+      color: $color-primary;
+    }
+
+    &__span {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 4.5rem;
+      height: 4.5rem;
+      border: 1px solid currentColor;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: all 0.2s;
+
+      &:not(:last-child) {
+        margin-right: 5rem;
+      }
+    }
+
+    &__span:hover {
+      border-color: $color-para;
+    }
+
+    &__span:hover > &__arrows {
+      fill: $color-para;
+    }
+
+    &__arrows {
+      width: 1.5rem;
+      height: 1.5rem;
+      fill: currentColor;
+      transition: all 0.2s;
+    }
+  }
+}

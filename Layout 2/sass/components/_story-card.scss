@@ -1,0 +1,152 @@
+.svg-hidden {
+  width: 0;
+  height: 0;
+  position: absolute;
+}
+
+.story-card {
+  &__container {
+    background-image: url("../img/circles-line.png");
+    background-position: center;
+    background-size: 3.1%;
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 0 7.5rem;
+
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(3, 47rem);
+
+    justify-content: center;
+    align-content: center;
+    grid-column-gap: 5vw;
+    grid-row-gap: 9rem;
+
+    @media only screen and (max-width: $bp-largest) {
+      background-image: none;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(6, auto);
+    }
+
+    @media only screen and (max-width: $bp-meduim) {
+      justify-items: center;
+      align-items: center;
+      padding: 0 2rem;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+      grid-row-gap: 4rem;
+    }
+  }
+
+  &__card {
+    background-color: $color-primary;
+    clip-path: url("#svgPath");
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    width: 60rem;
+    height: 31.5;
+
+    @media only screen and (max-width: $bp-largest) {
+      width: 60rem;
+      height: 31.5rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      width: 100%;
+      height: 31.5rem;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+      clip-path: none;
+      height: 100%;
+    }
+
+    &--2,
+    &--4,
+    &--6 {
+      clip-path: url("#svgPathLeft");
+      justify-self: end;
+      align-self: end;
+
+      @media only screen and (max-width: $bp-meduim) {
+        justify-self: center;
+        align-self: center;
+      }
+
+      @media only screen and (max-width: $bp-smallest) {
+        clip-path: none;
+      }
+    }
+  }
+  &__figure {
+    width: 19rem;
+    height: 32rem;
+
+    @media only screen and (max-width: $bp-smallest) {
+      display: none;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  &__text {
+    padding: 5.5rem 5rem 5.5rem 3rem;
+    color: $color-white;
+
+    @media only screen and (max-width: $bp-smallest) {
+      text-align: center;
+      padding: 5.5rem 3rem 5.5rem 3rem;
+    }
+    &--2,
+    &--4,
+    &--6 {
+      padding: 5.5rem 1rem 5.5rem 9rem;
+
+      @media only screen and (max-width: $bp-smallest) {
+        padding: 5.5rem 3rem 5.5rem 3rem;
+      }
+    }
+  }
+
+  &__date {
+    color: inherit;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+  }
+
+  &__title {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+  }
+
+  &__paragraph {
+    color: inherit;
+    font-weight: 500;
+  }
+
+  &__decoration {
+    position: absolute;
+    width: 40rem;
+    height: 28rem;
+
+    @media only screen and (max-width: $bp-smallest) {
+      display: none;
+    }
+
+    &--left {
+      bottom: -10%;
+      left: 0;
+    }
+    &--right {
+      top: -10%;
+      right: 0;
+    }
+  }
+}

@@ -1,0 +1,263 @@
+.header {
+  &__container {
+    position: absolute;
+    z-index: 10;
+    border-bottom: 1px solid currentColor;
+    color: $color-primary;
+
+    &--green {
+      position: relative;
+      background-color: $color-primary;
+      color: $color-white;
+      border-bottom: none;
+    }
+  }
+
+  display: flex;
+  justify-content: space-between;
+  padding: 2.2rem 7.5rem 1rem 8rem;
+  width: 100%;
+
+  @media only screen and (max-width: $bp-largest) {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+  @media only screen and (max-width: $bp-small) {
+    padding: 3rem 2rem;
+  }
+  &__collapse {
+    display: none;
+
+    @media only screen and (max-width: $bp-largest) {
+      display: inline-block;
+    }
+
+    &__button {
+      position: relative;
+      z-index: 10000000;
+      cursor: pointer;
+    }
+
+    &__dash {
+      display: block;
+      width: 4rem;
+      height: 0.4rem;
+      background-color: $color-para;
+
+      &:not(:last-child) {
+        margin-bottom: 0.5rem;
+      }
+    }
+
+    &__nav {
+      position: absolute;
+      z-index: 1000;
+      height: 100vh;
+      top: 0;
+      left: 0;
+      right: 0;
+      text-align: center;
+      background-color: $color-primary;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      transform: translateY(-100%);
+      transition: all 0.8s;
+    }
+
+    &__nav--visible {
+      transform: translateY(0);
+    }
+
+    &__list {
+      list-style: none;
+    }
+
+    &__item {
+      &:not(:last-child) {
+        margin-bottom: 1rem;
+      }
+    }
+
+    &__link {
+      &,
+      &:visited,
+      &:link {
+        text-decoration: none;
+        font-size: 4rem;
+        color: $color-para;
+      }
+    }
+  }
+
+  &__logo {
+    display: inline-block;
+    text-align: center;
+    margin-right: 10rem;
+
+    @media only screen and (max-width: $bp-huge) {
+      margin-right: 5rem;
+    }
+
+    @media only screen and (max-width: $bp-largest) {
+      margin: 0;
+    }
+  }
+  .heading-primary {
+    display: flex;
+    font-size: 3rem;
+
+    &--white {
+      color: $color-white;
+    }
+  }
+
+  .star {
+    width: 0.8rem;
+    height: 0.8rem;
+    margin-left: 0.2rem;
+    align-self: center;
+    &--white {
+      fill: $color-white;
+    }
+    &--primary {
+      fill: $color-primary;
+    }
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+    @media only screen and (max-width: $bp-largest) {
+      display: none;
+    }
+
+    .nav-main {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      &__list {
+        list-style: none;
+        display: flex;
+      }
+
+      &__item {
+        &:not(:last-child) {
+          margin-right: 4rem;
+        }
+
+        &:hover > .icon {
+          fill: $color-para;
+        }
+      }
+
+      &__link--main {
+        &,
+        &:active,
+        &:visited {
+          text-decoration: none;
+          font-size: 1.6rem;
+          font-weight: 600;
+          color: $color-primary;
+          transition: all 0.2s;
+        }
+        &:hover {
+          color: $color-para;
+        }
+      }
+
+      &__link--main--white {
+        &,
+        &:active,
+        &:visited {
+          color: $color-white;
+        }
+        &:hover {
+          color: $color-para;
+        }
+      }
+      .icon {
+        width: 1rem;
+        height: 1rem;
+        fill: currentColor;
+        margin-right: 0.6rem;
+      }
+
+      &__search {
+        position: relative;
+        justify-self: flex-end;
+        text-align: right;
+
+        .input {
+          padding: 0.5rem 0.5rem;
+          width: 3rem;
+          height: 3rem;
+          border-radius: 1rem;
+          outline: none;
+          border: 1px solid $color-para;
+          border-radius: 50%;
+          transition: all 0.2s;
+          background-color: transparent;
+          cursor: pointer;
+
+          &:focus {
+            width: 100%;
+            border-radius: 1rem;
+          }
+        }
+
+        .input--white {
+          border: 1px solid $color-white;
+        }
+        .input:focus + .btn__search {
+          pointer-events: auto;
+          cursor: pointer;
+          z-index: 1;
+        }
+
+        .btn__search {
+          display: flex;
+          justify-content: center;
+          outline: none;
+          border: none;
+          background-color: transparent;
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          right: 0;
+          transition: all 0.2s;
+          z-index: -1;
+
+          .icon {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 1.5rem;
+            height: 1.5rem;
+            margin: 0;
+            fill: $color-para;
+
+            &--white {
+              fill: $color-white;
+            }
+          }
+        }
+      }
+
+      @media only screen and (max-width: $bp-largest) {
+        display: none;
+      }
+    }
+  }
+}
+
+#link-active {
+  border-bottom: 1px solid currentColor;
+}
