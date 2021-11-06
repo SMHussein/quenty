@@ -1,0 +1,22 @@
+body {
+  font-family: "Dosis", sans-serif;
+  font-weight: 400;
+}
+
+.heading-primary,
+.heading-secondery {
+  font-family: "Great Vibes", cursive;
+  color: $color-primary;
+  font-weight: 400;
+}
+
+.heading-secondery {
+  font-size: 5rem;
+}
+
+.paragraph {
+  font-size: 1.7rem;
+  letter-spacing: 0.05rem;
+  line-height: 1.5;
+  color: $color-para;
+}

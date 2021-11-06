@@ -1,0 +1,35 @@
+.section__breadcrump {
+  background-image: url(../img/breadcrumb-bg.png);
+  height: 40rem;
+  background-position: center;
+  background-size: cover;
+}
+
+.breadcrump {
+  &__container {
+    position: relative;
+    padding: 0 7.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  &__heading {
+    font-size: 4.5rem;
+    font-weight: 400;
+    color: $color-white;
+    margin-bottom: 2rem;
+  }
+
+  &__paragraph {
+    font-weight: 700;
+    color: $color-white;
+    letter-spacing: 0.1rem;
+  }
+}
+
+.portfolio--dec {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80rem;
+}

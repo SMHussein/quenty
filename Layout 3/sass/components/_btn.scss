@@ -1,0 +1,35 @@
+.btn {
+  text-decoration: none;
+  transition: color 0.2s, background-color 0.2s, transform 1s;
+  font-size: 1.7rem;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 1.8rem 4rem;
+  border-radius: 3rem;
+  letter-spacing: 0.15rem;
+
+  &-primary {
+    &,
+    &:visited,
+    &:link {
+      color: $color-white;
+      background-color: $color-primary;
+    }
+  }
+
+  &-white {
+    &,
+    &:visited,
+    &:link {
+      padding: 1.7rem 4rem;
+      color: $color-primary;
+      background-color: $color-white;
+    }
+  }
+
+  &:hover {
+    background-color: $color-para;
+  }
+}

@@ -109,6 +109,13 @@
       display: flex;
       padding: 2.5rem 0 3.5rem 0;
       border-top: 1px solid #d8d8d8;
+
+      &--hide {
+        display: none;
+      }
+
+      &--show {
+      }
     }
 
     &--img {
@@ -129,6 +136,11 @@
       height: 0.4rem;
       background-color: #cbcbcb;
       transition: all 0.2s;
+      cursor: pointer;
+
+      &--active {
+        background-color: $color-primary;
+      }
 
       &:not(:last-child) {
         margin-right: 2rem;

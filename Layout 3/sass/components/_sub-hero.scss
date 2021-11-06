@@ -1,0 +1,27 @@
+.section__sub-hero {
+  height: 28.5rem;
+  background-image: url(../img/sub-hero.png);
+  background-position: top;
+  background-size: cover;
+}
+
+.sub-hero {
+  &__container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__heading {
+    color: $color-primary;
+    font-size: 7.5rem;
+  }
+
+  &__paragraph {
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+  }
+}

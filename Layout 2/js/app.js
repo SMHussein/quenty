@@ -24,3 +24,22 @@ btn.addEventListener("click", function () {
   }
   nav.classList.toggle("header__collapse__nav--visible");
 });
+
+/////////////////Logo slider
+
+let buttons = document.querySelectorAll(".home__rsvp__gallery--span");
+let containers = document.querySelectorAll(".home__rsvp__gallery--container");
+
+for (let i = 0; i < buttons.length; i++) {
+  buttons[i].addEventListener("click", (e) => {
+    for (let b of buttons) {
+      b.classList.remove("home__rsvp__gallery--span--active");
+    }
+    for (let cont of containers) {
+      cont.classList.add("home__rsvp__gallery--container--hide");
+    }
+    buttons[i].classList.add("home__rsvp__gallery--span--active");
+    containers[i].classList.remove("home__rsvp__gallery--container--hide");
+    containers[i].classList.add("home__rsvp__gallery--container--show");
+  });
+}

@@ -1,0 +1,105 @@
+.footer {
+  background-color: $color-black;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem 7.5rem;
+    position: relative;
+
+    @media only screen and (max-width: $bp-meduim) {
+      flex-direction: column;
+      padding: 5rem 2rem;
+    }
+  }
+
+  &__heading {
+    font-size: 3rem;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $color-white;
+
+    @media only screen and (max-width: $bp-meduim) {
+      margin: 2rem 0;
+    }
+  }
+
+  &__paragraph {
+    color: $color-white;
+    font-weight: 400;
+  }
+
+  &__link {
+    &,
+    &:link,
+    &:visited {
+      font-weight: 600;
+      text-decoration: none;
+      color: $color-primary;
+      transition: all 0.2s;
+    }
+
+    &:hover {
+      color: $color-white;
+    }
+  }
+}
+
+.arrow-wrap {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  filter: drop-shadow(0 1rem 1rem rgba(0, 0, 0, 1));
+}
+
+.arrow-up {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10rem;
+  height: 10rem;
+  background-color: $color-white;
+  clip-path: polygon(50% 0, 100% 100%, 0 100%);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 7.7rem;
+    height: 8rem;
+    background-color: $color-primary;
+    clip-path: polygon(50% 0, 100% 100%, 0 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    fill: $color-white;
+    position: relative;
+    z-index: 1;
+  }
+}
+.star {
+  width: 0.8rem;
+  height: 0.8rem;
+  margin-left: 0.2rem;
+  align-self: center;
+  &--white {
+    fill: $color-white;
+  }
+  &--primary {
+    fill: $color-primary;
+  }
+}

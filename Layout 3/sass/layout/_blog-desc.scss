@@ -1,0 +1,423 @@
+.blog__desc {
+  &__right {
+  }
+
+  &__figure {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 4.5rem;
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__title {
+    font-size: 3rem;
+    font-weight: 500;
+    color: $color-header;
+    margin-bottom: 3rem;
+  }
+
+  &__author {
+    &__container {
+      display: flex;
+      align-items: center;
+      margin-bottom: 3rem;
+    }
+
+    &__figure {
+      width: 4.5rem;
+      height: 4.5rem;
+      margin-right: 1.5rem;
+    }
+
+    &__img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    &__name {
+      font-size: 1.5rem;
+      font-weight: 400;
+      margin-right: 3.5rem;
+      color: rgba($color-header, 0.75);
+      span {
+        color: $color-header;
+        font-weight: 500;
+      }
+    }
+
+    &__date {
+      font-size: 1.5rem;
+      font-weight: 400;
+      color: rgba($color-header, 0.75);
+      span {
+        color: $color-header;
+        font-weight: 500;
+      }
+    }
+  }
+
+  &__article {
+    &__paragraph {
+      letter-spacing: 0.15rem;
+      line-height: 1.8;
+      &:not(:last-child) {
+        margin-bottom: 2rem;
+      }
+    }
+
+    &__container {
+      display: flex;
+    }
+
+    &__figure {
+      width: 100%;
+      height: 100%;
+
+      @media only screen and (max-width: $bp-tab) {
+        display: none;
+      }
+    }
+
+    &__img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    &__quote {
+      font-size: 2rem;
+      font-weight: 500;
+      padding-left: 7rem;
+      &__container {
+        position: relative;
+        margin-bottom: 4.5rem;
+      }
+
+      &__icon {
+        width: 10rem;
+        height: 10rem;
+        position: absolute;
+        top: -30%;
+        left: 0;
+      }
+    }
+  }
+
+  &__gallery {
+    &__container {
+      display: grid;
+      grid-template-columns: 1fr max-content repeat(3, 1fr);
+      grid-template-rows: repeat(2, 7rem);
+      grid-row-gap: 2.5rem;
+      grid-column-gap: 3.7rem;
+      margin-bottom: 4.5rem;
+
+      @media only screen and (max-width: $bp-largest) {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+      }
+
+      @media only screen and (max-width: $bp-large) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 1rem;
+      }
+    }
+
+    &__figure {
+      &--1 {
+        grid-row: 1/-1;
+
+        @media only screen and (max-width: $bp-largest) {
+          grid-row: 1/2;
+          grid-column: 1/2;
+        }
+        @media only screen and (max-width: $bp-large) {
+          grid-row: 1/2;
+          grid-column: 1/2;
+        }
+      }
+      &--2 {
+        grid-row: 1/2;
+
+        @media only screen and (max-width: $bp-largest) {
+          grid-row: 1/2;
+          grid-column: 2/3;
+        }
+        @media only screen and (max-width: $bp-large) {
+          grid-row: 1/2;
+          grid-column: 2/3;
+        }
+      }
+      &--3 {
+        grid-row: 2/3;
+        @media only screen and (max-width: $bp-largest) {
+          grid-row: 1/2;
+          grid-column: 3/4;
+        }
+
+        @media only screen and (max-width: $bp-large) {
+          grid-row: 2/3;
+          grid-column: 1/2;
+        }
+      }
+      &--4 {
+        grid-row: 1/-1;
+        @media only screen and (max-width: $bp-largest) {
+          grid-row: 2/3;
+          grid-column: 1/2;
+        }
+
+        @media only screen and (max-width: $bp-large) {
+          grid-row: 2/3;
+          grid-column: 2/3;
+        }
+      }
+      &--5 {
+        grid-row: 1/-1;
+        @media only screen and (max-width: $bp-largest) {
+          grid-row: 2/3;
+          grid-column: 2/3;
+        }
+        @media only screen and (max-width: $bp-large) {
+          grid-row: 3/4;
+          grid-column: 1/2;
+        }
+      }
+      &--6 {
+        grid-row: 1/-1;
+        @media only screen and (max-width: $bp-largest) {
+          grid-row: 2/3;
+          grid-column: 3/4;
+        }
+
+        @media only screen and (max-width: $bp-large) {
+          grid-row: 3/4;
+          grid-column: 2/3;
+        }
+      }
+    }
+
+    &__img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+
+      @media only screen and (max-width: $bp-large) {
+        width: 70%;
+        height: 70%;
+      }
+    }
+
+    &__tags {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 5rem;
+    }
+
+    &__tag {
+      font-size: 1.7rem;
+      font-weight: 400;
+      color: rgba($color-header, 0.75);
+      span {
+        color: $color-header;
+        font-weight: 600;
+      }
+    }
+  }
+
+  &__reviews {
+    margin-bottom: 4rem;
+  }
+
+  &__comment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+    border-top: 1px solid rgba(#cacaca, 0.57);
+    border-bottom: 1px solid rgba(#cacaca, 0.57);
+    margin-bottom: 3rem;
+
+    &__paragraph {
+      font-size: 2rem;
+    }
+
+    &__details {
+      display: grid;
+      grid-template-columns: repeat(2, auto);
+      grid-gap: 2.5rem;
+    }
+
+    &__figure {
+      width: 12rem;
+      height: 12rem;
+      grid-column: 1/2;
+    }
+
+    &__img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 1rem;
+    }
+
+    &__text {
+      text-align: left;
+    }
+
+    &__name {
+      font-size: 2.5rem;
+      font-weight: 500;
+      margin-bottom: 1rem;
+    }
+
+    &__date {
+      font-size: 1.5rem;
+      color: rgba($color-header, 0.75);
+      margin-bottom: 1rem;
+    }
+
+    &__post {
+      margin-bottom: 7rem;
+    }
+
+    &__reply {
+      &,
+      &:visited,
+      &:link {
+        font-size: 2rem;
+        font-weight: 500;
+        transition: all 0.2s;
+        cursor: pointer;
+      }
+
+      &:hover {
+        color: $color-pink;
+      }
+    }
+
+    &__reply:hover > &__icon {
+      fill: $color-pink;
+    }
+
+    &__icon {
+      width: 1rem;
+      height: 1rem;
+      transition: all 0.2s;
+    }
+  }
+
+  &__post {
+    &__title {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem 0;
+      border-top: 1px solid rgba(#cacaca, 0.57);
+      font-size: 2rem;
+      font-weight: 400;
+    }
+    &__form {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 1fr repeat(3, max-content);
+      grid-row-gap: 2rem;
+      grid-column-gap: 5.3rem;
+
+      @media only screen and (max-width: $bp-large) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr repeat(4, max-content);
+      }
+
+      @media only screen and (max-width: $bp-smallest) {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 1fr repeat(5, max-content);
+      }
+    }
+
+    &__textarea,
+    &__input {
+      font-family: inherit;
+      font-size: 1.6rem;
+      border: 1px solid #d3d3d3;
+      border-radius: 0.5rem;
+
+      &:focus {
+        outline: 1px solid $color-pink;
+      }
+    }
+    &__textarea {
+      grid-column: 1/-1;
+      padding: 4rem 3.5rem;
+    }
+    &__input {
+      font-family: inherit;
+      padding: 0.7rem 1.8rem;
+    }
+    &__checkbox {
+      grid-column: 1/-1;
+      grid-row: 3/4;
+      padding: 1rem 0;
+      display: flex;
+      align-items: center;
+
+      &__input {
+        appearance: none;
+        width: 1.5rem;
+        height: 1.5rem;
+        border: 1px solid #d3d3d3;
+        border-radius: 0.3rem;
+        margin-right: 1rem;
+        position: relative;
+        cursor: pointer;
+
+        &::after {
+          content: "\2713";
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          display: none;
+        }
+      }
+      &__input:checked:after {
+        display: inline-block;
+      }
+
+      &__label {
+        grid-row: 3/4;
+        grid-column: 1/-1;
+        font-size: 1.6rem;
+        color: #3a3a3a;
+        cursor: pointer;
+      }
+    }
+
+    &__btn {
+      grid-column: 1/-1;
+      padding: 1rem 0;
+      background-color: $color-pink;
+      outline: none;
+      border: none;
+      border-radius: 0.5rem;
+      font-size: 1.5rem;
+      font-weight: 500;
+      color: #ffffff;
+      transition: all 0.2s;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $color-dark-1;
+        color: $color-pink;
+      }
+    }
+  }
+}

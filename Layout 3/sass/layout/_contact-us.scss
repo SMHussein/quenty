@@ -1,0 +1,93 @@
+.section__map {
+  height: 88.4rem;
+
+  @media only screen and (max-width: $bp-1000) {
+    height: auto;
+  }
+}
+
+.map {
+  &__figure {
+    width: 80%;
+    height: 88.4rem;
+    margin-top: 6rem;
+
+    @media only screen and (max-width: $bp-1000) {
+      width: 100%;
+      height: 50rem;
+      margin-bottom: 5rem;
+    }
+  }
+
+  &__container {
+    position: relative;
+
+    @media only screen and (max-width: $bp-1000) {
+      padding: 0 7.5rem;
+    }
+
+    @media only screen and (max-width: $bp-sm) {
+      padding: 0 2rem;
+    }
+  }
+
+  &__form {
+    padding: 5.5rem 10rem;
+    background-color: $color-white;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+
+    @media only screen and (max-width: $bp-1000) {
+      right: auto;
+      position: relative;
+      top: 100%;
+      transform: translateY(0);
+      margin: 0 auto;
+    }
+
+    @media only screen and (max-width: $bp-meduim) {
+      padding: 5.5rem 2rem;
+    }
+  }
+
+  &__title {
+    text-align: center;
+    font-size: 6rem;
+    font-weight: 400;
+    color: #4a4a4a;
+    margin-bottom: 3.5rem;
+  }
+
+  &__box {
+    margin-bottom: 2.5rem;
+
+    &--last {
+      margin-bottom: 6.5rem;
+    }
+  }
+
+  &__label {
+    display: block;
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: $color-para;
+    letter-spacing: 0.1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  &__input {
+    padding: 1rem 1.5rem;
+    width: 100%;
+    border: 1px solid #d3d3d3;
+
+    &::placeholder {
+      font-size: 1.6rem;
+      font-weight: 500;
+      color: #989898;
+      letter-spacing: 0.1rem;
+    }
+  }
+}
