@@ -43,3 +43,5 @@ for (let i = 0; i < buttons.length; i++) {
     containers[i].classList.add("home__rsvp__gallery--container--show");
   });
 }
+
+///////////////////////////////Slider/////////////////////////////

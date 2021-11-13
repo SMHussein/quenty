@@ -544,7 +544,7 @@
 
   padding: 9rem 7.5rem;
 
-  @media only screen and (max-width: $bp-largest) {
+  @media only screen and (max-width: $bp-huge-1) {
     grid-template-columns: repeat(2, 1fr);
     grid-row-gap: 5rem;
     grid-column-gap: 4rem;
@@ -573,19 +573,26 @@
     }
   }
   &__about {
-    @media only screen and (max-width: $bp-largest) {
+    @media only screen and (max-width: $bp-huge-1) {
       order: 3;
+      align-self: start;
+      justify-self: start;
     }
 
     &--btn {
       margin-top: 3rem;
+      display: inline-block;
+
+      &--btn {
+        left: 5%;
+      }
     }
   }
 
   &__pages {
     justify-self: center;
 
-    @media only screen and (max-width: $bp-largest) {
+    @media only screen and (max-width: $bp-huge-1) {
       justify-self: start;
       @media only screen and (max-width: $bp-sm) {
         justify-self: center;
@@ -627,7 +634,7 @@
   &__list {
     list-style: none;
 
-    @media only screen and (max-width: $bp-largest) {
+    @media only screen and (max-width: $bp-huge-1) {
       display: grid;
       grid-template-rows: repeat(1, 1fr);
       grid-template-columns: repeat(5, 1fr);

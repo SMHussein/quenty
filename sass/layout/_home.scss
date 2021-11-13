@@ -281,6 +281,7 @@
     justify-content: center;
     margin-bottom: 7rem;
     grid-row-gap: 2rem;
+    padding: 0 2rem;
 
     @media only screen and (max-width: $bp-meduim) {
       grid-template-columns: 1fr;

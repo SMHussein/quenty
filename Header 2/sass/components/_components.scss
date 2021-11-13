@@ -40,94 +40,165 @@
     background-color: $color-pink;
     color: #ffffff;
 
-    &::before {
-      border-top: 2px solid #ffffff;
-      border-right: 2px solid transparent;
-      border-bottom: 2px solid #ffffff;
-      border-left: 2px solid #ffffff;
-    }
+    // &::before {
+    //   border-top: 2px solid #ffffff;
+    //   border-right: 2px solid transparent;
+    //   border-bottom: 2px solid #ffffff;
+    //   border-left: 2px solid #ffffff;
+    // }
 
-    &:hover::after {
-      border-top-color: #ffffff;
-      border-right-color: #ffffff;
-      border-bottom-color: #ffffff;
-      border-left-color: transparent;
-    }
+    // &:hover::after {
+    //   border-top-color: #ffffff;
+    //   border-right-color: #ffffff;
+    //   border-bottom-color: #ffffff;
+    //   border-left-color: transparent;
+    // }
   }
 
   &--white {
     background-color: #ffffff;
     color: $color-pink;
 
-    &::before {
-      border-top: 2px solid #ffffff;
-      border-right: 2px solid transparent;
-      border-bottom: 2px solid #ffffff;
-      border-left: 2px solid #ffffff;
-    }
+    // &::before {
+    //   border-top: 2px solid #ffffff;
+    //   border-right: 2px solid transparent;
+    //   border-bottom: 2px solid #ffffff;
+    //   border-left: 2px solid #ffffff;
+    // }
 
-    &:hover::after {
-      border-top-color: #ffffff;
-      border-right-color: #ffffff;
-      border-bottom-color: #ffffff;
-      border-left-color: transparent;
-    }
+    // &:hover::after {
+    //   border-top-color: #ffffff;
+    //   border-right-color: #ffffff;
+    //   border-bottom-color: #ffffff;
+    //   border-left-color: transparent;
+    // }
   }
 
   &--pink {
     background-color: $color-pink;
     color: #ffffff;
 
-    &::before {
-      border-top: 2px solid $color-pink;
-      border-right: 2px solid transparent;
-      border-bottom: 2px solid $color-pink;
-      border-left: 2px solid $color-pink;
-    }
+    // &::before {
+    //   border-top: 2px solid $color-pink;
+    //   border-right: 2px solid transparent;
+    //   border-bottom: 2px solid $color-pink;
+    //   border-left: 2px solid $color-pink;
+    // }
 
-    &:hover::after {
-      border-top-color: $color-pink;
-      border-right-color: $color-pink;
-      border-bottom-color: $color-pink;
-      border-left-color: transparent;
+    // &:hover::after {
+    //   border-top-color: $color-pink;
+    //   border-right-color: $color-pink;
+    //   border-bottom-color: $color-pink;
+    //   border-left-color: transparent;
+    // }
+  }
+
+  // &::before {
+  //   content: "";
+  //   width: 60%;
+  //   height: 140%;
+  //   position: absolute;
+  //   z-index: -1;
+  //   background-color: transparent;
+  //   top: 50%;
+  //   left: -5%;
+  //   transform: translateY(-50%);
+  //   border-top-left-radius: 10rem;
+  //   border-bottom-left-radius: 10rem;
+  // }
+
+  // &::after {
+  //   content: "";
+  //   width: 110%;
+  //   height: 140%;
+  //   position: absolute;
+  //   z-index: -1;
+  //   background-color: transparent;
+  //   top: 50%;
+  //   right: -5%;
+  //   transform: translateY(-50%);
+  //   border-top: 2px solid transparent;
+  //   border-bottom: 2px solid transparent;
+  //   border-right: 2px solid transparent;
+  //   border-left: none;
+  //   border-radius: 10rem;
+  //   transition: border-top-color 0.03s linear 0s,
+  //     border-bottom-color 0.03s linear 0.06s,
+  //     border-right-color 0.03s linear 0.03s;
+  // }
+}
+.btn-svg {
+  position: absolute;
+  z-index: -1;
+  height: 130%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-rect {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  fill: transparent;
+  stroke: 10;
+  stroke-width: 5;
+  stroke: #ffffff;
+  stroke-dashoffset: 620;
+  stroke-dasharray: 900;
+  transition: stroke-dashoffset 0.5s;
+
+  &--pink {
+    stroke: $color-pink;
+    stroke-dashoffset: 630;
+    stroke-dasharray: 1100;
+    stroke-width: 8;
+
+    &--footer {
+      width: 87.5%;
+      stroke-dashoffset: 900;
+      stroke-dasharray: 1300;
+      stroke-width: 10;
     }
   }
 
-  &::before {
-    content: "";
-    width: 60%;
-    height: 140%;
-    position: absolute;
-    z-index: -1;
-    background-color: transparent;
-    top: 50%;
-    left: -5%;
-    transform: translateY(-50%);
-    border-top-left-radius: 10rem;
-    border-bottom-left-radius: 10rem;
+  &--white {
+    stroke: #ffffff;
+    stroke-width: 3;
+    stroke-dashoffset: 1070;
+    stroke-dasharray: 400;
   }
 
-  &::after {
-    content: "";
-    width: 110%;
-    height: 140%;
-    position: absolute;
-    z-index: -1;
-    background-color: transparent;
-    top: 50%;
-    right: -5%;
-    transform: translateY(-50%);
-    border-top: 2px solid transparent;
-    border-bottom: 2px solid transparent;
-    border-right: 2px solid transparent;
-    border-left: none;
-    border-radius: 10rem;
-    transition: border-top-color 0.03s linear 0s,
-      border-bottom-color 0.03s linear 0.06s,
-      border-right-color 0.03s linear 0.03s;
+  &--contact {
+    stroke-width: 10;
+    stroke-dashoffset: 770;
+    stroke-dasharray: 1200;
   }
 }
 
+.btn-primary:hover + svg > rect {
+  stroke-dashoffset: -280;
+}
+
+.btn-primary:hover + svg > .btn-rect--pink {
+  stroke-dashoffset: -470;
+}
+
+.btn-primary:hover + svg > .btn-rect--white {
+  stroke-dashoffset: 670;
+}
+
+.btn-primary:hover + svg > .btn-rect--pink--footer {
+  stroke-dashoffset: -400;
+}
+
+.btn-primary:hover + svg > .btn-rect--contact {
+  stroke-dashoffset: -430;
+}
 .btn-animated {
   animation: moveInBottom 0.5s ease-out 0.75s;
   animation-fill-mode: backwards;

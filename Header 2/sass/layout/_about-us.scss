@@ -579,6 +579,11 @@
 
     &--btn {
       margin-top: 3rem;
+      display: inline-block;
+
+      &--btn {
+        left: 5%;
+      }
     }
   }
 
