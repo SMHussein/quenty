@@ -1339,7 +1339,7 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
-  grid-gap: 6rem;
+  grid-gap: 2rem;
   text-align: center; }
   @media only screen and (max-width: 68.75em) {
     .bride-groom__container {
@@ -1438,7 +1438,9 @@ body {
 
 .bride-groom__paragraph {
   margin-bottom: 3rem;
-  padding: 0 1.2rem; }
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  color: #242424; }
 
 .bride-groom__nav {
   list-style: none;
@@ -1464,8 +1466,8 @@ body {
   font-weight: 600; }
 
 .bride-groom__details {
-  padding: 0 1.2rem;
-  color: rgba(58, 58, 58, 0.75); }
+  color: rgba(58, 58, 58, 0.75);
+  letter-spacing: 0.05rem; }
   .bride-groom__details:not(:last-child) {
     margin-bottom: 1.5rem; }
     @media only screen and (max-width: 68.75em) {
