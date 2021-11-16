@@ -44,22 +44,30 @@
     &,
     &:visited,
     &:link {
+      align-self: start;
+      justify-self: start;
       text-decoration: none;
       font-size: 1.8rem;
       font-weight: 500;
       color: $color-header;
       transition: all 0.2s;
+      display: inline-block;
     }
 
     span {
       display: block;
-      width: 10%;
+      width: 40%;
       height: 0.8px;
       background-color: currentColor;
       margin: 0.5rem 0;
+      transition: all 0.2s;
     }
     &:hover {
       color: $color-pink;
     }
+  }
+
+  &__cta:hover > span {
+    width: 100%;
   }
 }

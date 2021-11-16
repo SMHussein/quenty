@@ -48,58 +48,62 @@
 }
 
 .arrow-wrap {
+  // position: absolute;
+  // top: 0;
+  // left: 50%;
+  // transform: translate(-50%, -50%);
+  // filter: drop-shadow(0 1rem 1rem rgba(0, 0, 0, 1));
   position: absolute;
-  top: 0;
+  top: -5%;
   left: 50%;
   transform: translate(-50%, -50%);
-  filter: drop-shadow(0 1rem 1rem rgba(0, 0, 0, 1));
+  width: 15rem;
+  height: 15rem;
+  background-image: url(../img/arrow-up.png);
+  background-position: center;
+  background-size: cover;
 }
 
 .arrow-up {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 10rem;
-  height: 10rem;
-  background-color: $color-white;
-  clip-path: polygon(50% 0, 100% 100%, 0 100%);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  // position: absolute;
+  // top: 50%;
+  // left: 50%;
+  // transform: translate(-50%, -50%);
+  // width: 10rem;
+  // height: 10rem;
+  // // background-color: $color-white;
+  // clip-path: polygon(50% 0, 100% 100%, 0 100%);
+  // box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 52%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 7.7rem;
-    height: 8rem;
-    background-color: $color-primary;
-    clip-path: polygon(50% 0, 100% 100%, 0 100%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  &__icon {
-    width: 2.5rem;
-    height: 2.5rem;
-    fill: $color-white;
-    position: relative;
-    z-index: 1;
-  }
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   top: 52%;
+  //   left: 50%;
+  //   transform: translate(-50%, -50%);
+  //   width: 7.7rem;
+  //   height: 8rem;
+  //   background-color: $color-primary;
+  //   clip-path: polygon(50% 0, 100% 100%, 0 100%);
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  // }
+  // &__icon {
+  //   width: 2.5rem;
+  //   height: 2.5rem;
+  //   fill: $color-white;
+  //   position: relative;
+  //   z-index: 1;
+  // }
 }
 .star {
   width: 0.8rem;
   height: 0.8rem;
   margin-left: 0.2rem;
   align-self: center;
-  &--white {
-    fill: $color-white;
-  }
-  &--primary {
-    fill: $color-primary;
-  }
+  fill: currentColor;
 }

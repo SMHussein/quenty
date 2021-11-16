@@ -8,10 +8,22 @@ body {
   font-family: "Great Vibes", cursive;
   color: $color-primary;
   font-weight: 400;
+  text-decoration: none;
+}
+.heading-primary {
+  a {
+    text-decoration: none;
+    color: $color-primary;
+  }
 }
 
 .heading-secondery {
   font-size: 5rem;
+
+  a {
+    color: $color-white;
+    text-decoration: none;
+  }
 }
 
 .paragraph {

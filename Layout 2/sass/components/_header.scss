@@ -10,6 +10,10 @@
       background-color: $color-primary;
       color: $color-white;
       border-bottom: none;
+
+      a {
+        color: $color-white;
+      }
     }
   }
 

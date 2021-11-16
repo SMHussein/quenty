@@ -224,6 +224,7 @@
     padding: 1.2rem 2.5rem;
     border: 1px solid #e4e4e4;
     border-radius: 5rem;
+    align-items: center;
 
     @media only screen and (max-width: $bp-tab) {
       margin-bottom: 2rem;
@@ -259,6 +260,20 @@
     }
   }
 
+  &__link {
+    &--col-2 {
+    }
+
+    &--col-3 {
+      width: 1.7rem;
+      height: 1.524rem;
+    }
+    &--list {
+      width: 2rem;
+      height: 1.616rem;
+    }
+  }
+
   &__form {
     min-width: 16.8rem;
   }
@@ -282,6 +297,8 @@
       height: 1.8rem;
       position: absolute;
       right: 2rem;
+      top: 50%;
+      transform: translateY(-50%);
     }
   }
 

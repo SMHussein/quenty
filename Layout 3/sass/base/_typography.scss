@@ -8,6 +8,15 @@ body {
   font-family: "Great Vibes", cursive;
   color: $color-primary;
   font-weight: 400;
+
+  a {
+    text-decoration: none;
+    color: $color-white;
+    font-weight: 400;
+  }
+}
+
+.heading-primary {
 }
 
 .heading-secondery {

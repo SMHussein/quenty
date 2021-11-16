@@ -581,6 +581,10 @@
       margin-top: 3rem;
       display: inline-block;
 
+      &--portfolio {
+        margin-top: 6rem;
+      }
+
       &--btn {
         left: 5%;
       }
@@ -714,8 +718,8 @@
       transform: scale(1.1);
     }
     &--icon {
-      width: 1.275rem;
-      height: 1.275rem;
+      width: 1.5rem;
+      height: 1.5rem;
       display: block;
       margin: 0 auto;
       transition: all 0.2s;
@@ -746,7 +750,7 @@
   &__copy-right {
     &--main {
       background-color: $color-dark-1;
-      border-top: 1px solid #c6c6c6;
+      border-top: 1px solid rgba(#ffffff, 0.1);
     }
     text-align: center;
     padding: 2rem 0;

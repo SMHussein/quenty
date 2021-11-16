@@ -308,14 +308,16 @@
     margin-bottom: 3rem;
 
     &--icon {
-      width: 22rem;
-      height: 7rem;
+      height: 5.5rem;
+      width: 20rem;
+      text-align: center;
+      position: relative;
     }
 
     &--paragraph {
       position: absolute;
-      top: 40%;
-      left: 49%;
+      top: 50%;
+      left: 50%;
       transform: translate(-50%, -50%);
       font-size: 2.5rem;
       font-weight: 500;
