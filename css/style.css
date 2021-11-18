@@ -169,84 +169,59 @@ body {
     color: #3a3a3a; }
 
 .btn--parent {
+  display: inline-block;
   position: relative;
-  z-index: 0; }
+  z-index: 0;
+  width: 20rem;
+  height: 5.085rem; }
 
 .btn-primary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  outline: none;
   border-radius: 10rem;
-  display: inline-block;
-  font-size: 1.6rem;
-  position: relative;
-  padding: 2rem 7rem;
+  font-size: 1.7rem;
+  width: 100%;
+  height: 100%;
   cursor: pointer;
-  text-decoration: none; }
-  .btn-primary--pink-white {
-    background-color: #ff656b;
-    color: #ffffff; }
-  .btn-primary--white {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #ff656b;
+  font-weight: 500; }
+  .btn-primary--pink {
     background-color: #ffffff;
     color: #ff656b; }
-  .btn-primary--pink {
-    background-color: #ff656b;
-    color: #ffffff; }
 
 .btn-svg {
   position: absolute;
   z-index: -1;
-  height: 130%;
+  width: 110%;
+  height: 190%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 0rem;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
+  stroke-opacity: 1;
+  stroke-linecap: round; }
 
 .btn-rect {
   position: absolute;
-  width: 100%;
+  width: 98%;
   height: 100%;
   fill: transparent;
-  stroke: 10;
-  stroke-width: 5;
+  stroke-width: 6;
   stroke: #ffffff;
-  stroke-dashoffset: 620;
-  stroke-dasharray: 900;
-  transition: stroke-dashoffset 0.5s; }
+  top: 0;
+  left: 0;
+  stroke-dashoffset: 695;
+  stroke-dasharray: 1000;
+  transition: all 1s; }
   .btn-rect--pink {
-    stroke: #ff656b;
-    stroke-dashoffset: 630;
-    stroke-dasharray: 1100;
-    stroke-width: 8; }
-    .btn-rect--pink--footer {
-      width: 87.5%;
-      stroke-dashoffset: 900;
-      stroke-dasharray: 1300;
-      stroke-width: 10; }
-  .btn-rect--white {
-    stroke: #ffffff;
-    stroke-width: 3;
-    stroke-dashoffset: 1070;
-    stroke-dasharray: 400; }
-  .btn-rect--contact {
-    stroke-width: 10;
-    stroke-dashoffset: 770;
-    stroke-dasharray: 1200; }
+    stroke: #ff656b; }
 
-.btn-primary:hover + svg > rect {
-  stroke-dashoffset: -280; }
-
-.btn-primary:hover + svg > .btn-rect--pink {
-  stroke-dashoffset: -470; }
-
-.btn-primary:hover + svg > .btn-rect--white {
-  stroke-dashoffset: 670; }
-
-.btn-primary:hover + svg > .btn-rect--pink--footer {
-  stroke-dashoffset: -400; }
-
-.btn-primary:hover + svg > .btn-rect--contact {
-  stroke-dashoffset: -430; }
+.btn-primary:hover ~ svg > .hover {
+  stroke-dashoffset: -305; }
 
 .btn-animated {
   animation: moveInBottom 0.5s ease-out 0.75s;
@@ -1164,7 +1139,10 @@ body {
     width: 2.5rem;
     height: 2.5rem;
     fill: #ffffff;
-    transition: all 0.2s; }
+    transition: all 0.2s;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
 
 .our-stay__heading {
   display: flex;
@@ -1861,25 +1839,26 @@ body {
   text-align: center;
   display: grid;
   grid-template-rows: repeat(6, min-content);
-  grid-row-gap: 2.5rem;
   justify-content: center;
   align-items: center;
   justify-items: center;
-  padding: 5rem; }
+  padding: 5rem 1.7rem; }
   @media only screen and (max-width: 31.25em) {
     .rsvp__form {
       padding: 2rem; } }
 
 .rsvp__heading {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  margin-bottom: 5rem; }
 
 .rsvp__header {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 2.4rem;
+  color: #3a3a3a;
+  font-size: 3rem;
   margin: 0 0.5rem; }
 
 .rsvp__icon {
@@ -1887,18 +1866,26 @@ body {
   height: 1rem;
   display: block; }
 
+.rsvp__name {
+  margin-bottom: 2.5rem; }
+
+.rsvp__guests {
+  margin-bottom: 2.5rem; }
+
 .rsvp__input {
   padding: 1rem 5rem;
   border-radius: 5rem;
   border: 1px solid #d2d2d2;
   text-align: center;
   font-family: inherit;
-  outline: none; }
+  outline: none;
+  width: 26.1rem;
+  height: 4.1rem; }
   .rsvp__input:focus {
     outline: 1px solid #ff656b; }
 
 .rsvp__sub-heading {
-  margin-bottom: 1rem;
+  margin-bottom: 1.4rem;
   font-size: 1.7rem;
   font-weight: 400;
   color: #3a3a3a; }
@@ -1943,17 +1930,17 @@ body {
 
 .rsvp__attending {
   position: relative;
-  z-index: 2; }
+  z-index: 2;
+  margin-bottom: 2.5rem; }
 
 .rsvp__line {
   width: 70%;
   height: 1px;
-  background-color: #d2d2d2; }
+  background-color: #d2d2d2;
+  margin-bottom: 4rem; }
 
 .rsvp__btn {
-  background-color: transparent;
-  outline: none;
-  border: none; }
+  margin-bottom: 2.5rem; }
 
 .rsvp__decor {
   position: absolute;

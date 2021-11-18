@@ -86,7 +86,6 @@
 //     height: 100%;
 //   }
 // }
-
 //RSVP //////////////////////////////////////////////
 .section__rsvp {
   background-image: url("../img/rsvp.png");
@@ -114,11 +113,11 @@
     text-align: center;
     display: grid;
     grid-template-rows: repeat(6, min-content);
-    grid-row-gap: 2.5rem;
     justify-content: center;
     align-items: center;
     justify-items: center;
-    padding: 5rem;
+
+    padding: 5rem 1.7rem;
 
     @media only screen and (max-width: $bp-smallest) {
       padding: 2rem;
@@ -128,6 +127,7 @@
   &__heading {
     display: flex;
     justify-content: center;
+    margin-bottom: 5rem;
   }
 
   &__sub-heading {
@@ -138,7 +138,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 2.4rem;
+    color: #3a3a3a;
+    font-size: 3rem;
     margin: 0 0.5rem;
   }
 
@@ -149,6 +150,10 @@
   }
 
   &__name {
+    margin-bottom: 2.5rem;
+  }
+  &__guests {
+    margin-bottom: 2.5rem;
   }
 
   &__input {
@@ -158,6 +163,8 @@
     text-align: center;
     font-family: inherit;
     outline: none;
+    width: 26.1rem;
+    height: 4.1rem;
 
     &:focus {
       outline: 1px solid $color-pink;
@@ -165,7 +172,7 @@
   }
 
   &__sub-heading {
-    margin-bottom: 1rem;
+    margin-bottom: 1.4rem;
     font-size: 1.7rem;
     font-weight: 400;
     color: #3a3a3a;
@@ -217,18 +224,18 @@
   &__attending {
     position: relative;
     z-index: 2;
+    margin-bottom: 2.5rem;
   }
 
   &__line {
     width: 70%;
     height: 1px;
     background-color: #d2d2d2;
+    margin-bottom: 4rem;
   }
 
   &__btn {
-    background-color: transparent;
-    outline: none;
-    border: none;
+    margin-bottom: 2.5rem;
   }
 
   &__decor {
@@ -266,7 +273,6 @@
     }
   }
 }
-
 // When Where ////////////////////////////////////////////
 
 .section__when-where {

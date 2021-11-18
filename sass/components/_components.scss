@@ -23,182 +23,68 @@
 }
 
 .btn--parent {
+  display: inline-block;
   position: relative;
   z-index: 0;
+  width: 20rem;
+  height: 5.085rem;
 }
 
 .btn-primary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  outline: none;
   border-radius: 10rem;
-  display: inline-block;
-  font-size: 1.6rem;
-  position: relative;
-  padding: 2rem 7rem;
+  font-size: 1.7rem;
+  width: 100%;
+  height: 100%;
   cursor: pointer;
   text-decoration: none;
-
-  &--pink-white {
-    background-color: $color-pink;
-    color: #ffffff;
-
-    // &::before {
-    //   border-top: 2px solid #ffffff;
-    //   border-right: 2px solid transparent;
-    //   border-bottom: 2px solid #ffffff;
-    //   border-left: 2px solid #ffffff;
-    // }
-
-    // &:hover::after {
-    //   border-top-color: #ffffff;
-    //   border-right-color: #ffffff;
-    //   border-bottom-color: #ffffff;
-    //   border-left-color: transparent;
-    // }
-  }
-
-  &--white {
-    background-color: #ffffff;
-    color: $color-pink;
-
-    // &::before {
-    //   border-top: 2px solid #ffffff;
-    //   border-right: 2px solid transparent;
-    //   border-bottom: 2px solid #ffffff;
-    //   border-left: 2px solid #ffffff;
-    // }
-
-    // &:hover::after {
-    //   border-top-color: #ffffff;
-    //   border-right-color: #ffffff;
-    //   border-bottom-color: #ffffff;
-    //   border-left-color: transparent;
-    // }
-  }
+  color: #ffffff;
+  background-color: $color-pink;
+  font-weight: 500;
 
   &--pink {
-    background-color: $color-pink;
-    color: #ffffff;
-
-    // &::before {
-    //   border-top: 2px solid $color-pink;
-    //   border-right: 2px solid transparent;
-    //   border-bottom: 2px solid $color-pink;
-    //   border-left: 2px solid $color-pink;
-    // }
-
-    // &:hover::after {
-    //   border-top-color: $color-pink;
-    //   border-right-color: $color-pink;
-    //   border-bottom-color: $color-pink;
-    //   border-left-color: transparent;
-    // }
+    background-color: #ffffff;
+    color: $color-pink;
   }
-
-  // &::before {
-  //   content: "";
-  //   width: 60%;
-  //   height: 140%;
-  //   position: absolute;
-  //   z-index: -1;
-  //   background-color: transparent;
-  //   top: 50%;
-  //   left: -5%;
-  //   transform: translateY(-50%);
-  //   border-top-left-radius: 10rem;
-  //   border-bottom-left-radius: 10rem;
-  // }
-
-  // &::after {
-  //   content: "";
-  //   width: 110%;
-  //   height: 140%;
-  //   position: absolute;
-  //   z-index: -1;
-  //   background-color: transparent;
-  //   top: 50%;
-  //   right: -5%;
-  //   transform: translateY(-50%);
-  //   border-top: 2px solid transparent;
-  //   border-bottom: 2px solid transparent;
-  //   border-right: 2px solid transparent;
-  //   border-left: none;
-  //   border-radius: 10rem;
-  //   transition: border-top-color 0.03s linear 0s,
-  //     border-bottom-color 0.03s linear 0.06s,
-  //     border-right-color 0.03s linear 0.03s;
-  // }
 }
 .btn-svg {
   position: absolute;
   z-index: -1;
-  height: 130%;
+  width: 110%;
+  height: 190%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 0rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  stroke-opacity: 1;
+  stroke-linecap: round;
 }
 
 .btn-rect {
   position: absolute;
-  width: 100%;
+  width: 98%;
   height: 100%;
   fill: transparent;
-  stroke: 10;
-  stroke-width: 5;
+  stroke-width: 6;
   stroke: #ffffff;
-  stroke-dashoffset: 620;
-  stroke-dasharray: 900;
-  transition: stroke-dashoffset 0.5s;
+  top: 0;
+  left: 0;
+  stroke-dashoffset: 695;
+  stroke-dasharray: 1000;
+  transition: all 1s;
 
   &--pink {
     stroke: $color-pink;
-    stroke-dashoffset: 630;
-    stroke-dasharray: 1100;
-    stroke-width: 8;
-
-    &--footer {
-      width: 87.5%;
-      stroke-dashoffset: 900;
-      stroke-dasharray: 1300;
-      stroke-width: 10;
-    }
-  }
-
-  &--white {
-    stroke: #ffffff;
-    stroke-width: 3;
-    stroke-dashoffset: 1070;
-    stroke-dasharray: 400;
-  }
-
-  &--contact {
-    stroke-width: 10;
-    stroke-dashoffset: 770;
-    stroke-dasharray: 1200;
   }
 }
 
-.btn-primary:hover + svg > rect {
-  stroke-dashoffset: -280;
+.btn-primary:hover ~ svg > .hover {
+  stroke-dashoffset: -305;
 }
 
-.btn-primary:hover + svg > .btn-rect--pink {
-  stroke-dashoffset: -470;
-}
-
-.btn-primary:hover + svg > .btn-rect--white {
-  stroke-dashoffset: 670;
-}
-
-.btn-primary:hover + svg > .btn-rect--pink--footer {
-  stroke-dashoffset: -400;
-}
-
-.btn-primary:hover + svg > .btn-rect--contact {
-  stroke-dashoffset: -430;
-}
 .btn-animated {
   animation: moveInBottom 0.5s ease-out 0.75s;
   animation-fill-mode: backwards;
